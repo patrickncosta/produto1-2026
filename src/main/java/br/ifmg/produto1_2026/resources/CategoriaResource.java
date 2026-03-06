@@ -1,6 +1,8 @@
 package br.ifmg.produto1_2026.resources;
 
 import br.ifmg.produto1_2026.entities.Categoria;
+import br.ifmg.produto1_2026.service.CategoriaService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,17 +16,12 @@ import java.util.List;
 
 public class CategoriaResource {
 
+    @Autowired
+    private CategoriaService categoriaService;
+
     @GetMapping
     public ResponseEntity<List<Categoria>> categoria(){
-
-        Categoria categoria1 = new Categoria(1L, "notebooks");
-        Categoria categoria2 = new Categoria(2L, "celular");
-        Categoria categoria3 = new Categoria(3L, "livros");
-
-        List<Categoria> categorias = new ArrayList<Categoria>();
-        categorias.add(categoria1);
-        categorias.add(categoria2);
-        categorias.add(categoria3);
+        List<Categoria> categorias = categoriaService.findAll();
         return ResponseEntity.ok().body(categorias);
     };
 
