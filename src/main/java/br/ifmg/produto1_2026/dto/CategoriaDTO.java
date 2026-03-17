@@ -6,6 +6,10 @@ public class CategoriaDTO {
     private Long id;
     private  String nome;
 
+    public CategoriaDTO(){
+
+    }
+
     public CategoriaDTO(Categoria categoria) {
         this.id = categoria.getId();
         this.nome = categoria.getNome();

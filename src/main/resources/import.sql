@@ -1,4 +1,4 @@
-insert into tb_categoria(nome) values('Livros');
-insert into tb_categoria(nome) values('Notebooks');
-insert into tb_categoria(nome) values('Computadores');
-insert into tb_categoria(nome) values('Brinquedos');
+insert into tb_categoria(nome, criado_em) values('Livros',NOW());
+insert into tb_categoria(nome, criado_em) values('Notebooks',NOW());
+insert into tb_categoria(nome, criado_em) values('Computadores',NOW());
+insert into tb_categoria(nome, criado_em) values('Brinquedos',NOW());

@@ -2,6 +2,7 @@ package br.ifmg.produto1_2026.entities;
 
 import jakarta.persistence.*;
 
+import java.time.Instant;
 import java.util.Objects;
 
 @Entity
@@ -12,6 +13,11 @@ public class Categoria {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
+
+    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+    private Instant criadoEm;
+    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+    private Instant atualizadoEm;
 
     public Categoria() {
 
@@ -36,6 +42,24 @@ public class Categoria {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public Instant getCriadoEm() {
+        return criadoEm;
+    }
+
+    public Instant getAtualizadoEm() {
+        return atualizadoEm;
+    }
+
+    @PrePersist
+    public void prePersist(){
+        this.criadoEm = Instant.now();
+    }
+
+    @PreUpdate
+    public void preUpdate(){
+        this.atualizadoEm = Instant.now();
     }
 
     @Override

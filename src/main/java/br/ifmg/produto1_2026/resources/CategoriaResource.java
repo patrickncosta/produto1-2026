@@ -21,7 +21,10 @@ public class CategoriaResource {
     private CategoriaService categoriaService;
 
     @GetMapping
-    public ResponseEntity<List<CategoriaDTO>> categoria(){
+    public ResponseEntity<List<CategoriaDTO>> categoria(@RequestParam(value = "page", defaultValue = "0") Integer page,
+                                                        @RequestParam(value = "linesPerPage", defaultValue = "10") Integer linesPerPage,
+                                                        @RequestParam(value = "direction", defaultValue = "ASC") String direction,
+                                                        @RequestParam(value = "sort", defaultValue = "id") String sort){
         List<CategoriaDTO> categorias = categoriaService.findAll();
         return ResponseEntity.ok().body(categorias);
     };
@@ -44,5 +47,18 @@ public class CategoriaResource {
         return ResponseEntity.created(location).body(retorno);
     }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Long id){
+        categoriaService.delete(id);
+
+        return ResponseEntity.noContent().build();
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<CategoriaDTO> update(@PathVariable Long id, @RequestBody CategoriaDTO dto){
+        CategoriaDTO retorno = categoriaService.update(id,dto);
+
+        return ResponseEntity.ok().body(retorno);
+    }
 
 }
