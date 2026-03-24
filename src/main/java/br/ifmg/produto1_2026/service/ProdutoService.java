@@ -1,7 +1,6 @@
 package br.ifmg.produto1_2026.service;
 
 import br.ifmg.produto1_2026.dto.ProdutoDTO;
-
 import br.ifmg.produto1_2026.entities.Produto;
 import br.ifmg.produto1_2026.repositories.ProdutoRepository;
 import br.ifmg.produto1_2026.service.exception.ErroNoBancoDeDados;
@@ -36,11 +35,11 @@ public class ProdutoService {
     }
 
     public ProdutoDTO findById(Long id) {
-        //buscamos no bd o produtoo. O resultado é um objeto do tipo Optional
+        //buscamos no bd o produto. O resultado é um objeto do tipo Optional
         Optional<Produto> opt = produtoRepository.findById(id);
 
         //buscamos o produto dentro do objeto Optional
-        Produto produto = opt.orElseThrow(()->new RegistroNaoEncontrado("Produto não encontrado"));
+        Produto produto = opt.orElseThrow(()->new RegistroNaoEncontrado("Produto não encontrada"));
 
         //convertemos a entidade de DTO
         return new ProdutoDTO(produto);
@@ -51,9 +50,12 @@ public class ProdutoService {
 
         Produto entity = new Produto();
         entity.setNome(dto.getNome());
+        entity.setDescricao(dto.getDescription());
+        entity.setPreco(dto.getPrice());
+        entity.setImgUrl(dto.getImgURL());
 
         Produto novo = produtoRepository.save(entity);
-        return new ProdutoDTO(entity);
+        return new ProdutoDTO(novo);
     }
 
     @Transactional
@@ -73,12 +75,15 @@ public class ProdutoService {
     public ProdutoDTO update(Long id, ProdutoDTO dto) {
 
         if(!produtoRepository.existsById(id)){
-            throw new RegistroNaoEncontrado("Produto não encontrado para ser alterado");
+            throw new RegistroNaoEncontrado("Produto não encontrado para ser alterada");
         }
 
         Produto entity = produtoRepository.getReferenceById(id);
 
         entity.setNome(dto.getNome());
+        entity.setDescricao(dto.getDescription());
+        entity.setPreco(dto.getPrice());
+        entity.setImgUrl(dto.getImgURL());
         entity = produtoRepository.save(entity);
         return new ProdutoDTO(entity);
     }

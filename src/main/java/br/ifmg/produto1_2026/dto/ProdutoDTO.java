@@ -14,11 +14,11 @@ public class ProdutoDTO {
     }
 
     public ProdutoDTO(Produto produto) {
-        this.id = getId();
-        this.nome = getNome();
-        this.description = getDescription();
-        this.price = getPrice();
-        this.imgURL = getImgURL();
+        this.id = produto.getId();
+        this.nome = produto.getNome();
+        this.description = produto.getDescricao();
+        this.price = produto.getPreco();
+        this.imgURL = produto.getImgUrl();
     }
 
     public ProdutoDTO(Long id, String nome, String description, Double price, String imgURL) {
