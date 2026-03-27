@@ -3,35 +3,33 @@ package br.ifmg.produto1_2026.entities;
 import jakarta.persistence.*;
 
 import java.time.Instant;
-import java.util.HashSet;
 import java.util.Objects;
-import java.util.Set;
 
 @Entity
-@Table(name = "tb_categoria")
-public class Categoria {
+@Table(name = "tb_role")
+public class Role {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nome;
+    private String autoridade;
 
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant criadoEm;
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant atualizadoEm;
 
-    @ManyToMany(mappedBy = "categorias")
-    private Set<Produto> produtos = new HashSet<>();
-
-    public Categoria() {
-
+    public Role() {
     }
 
-    public Categoria(Long id, String nome) {
+    public Role(Long id, String autoridade, Instant criadoEm, Instant atualizadoEm) {
         this.id = id;
-        this.nome = nome;
+        this.autoridade = autoridade;
+        this.criadoEm = criadoEm;
+        this.atualizadoEm = atualizadoEm;
     }
+
+
 
     public Long getId() {
         return id;
@@ -41,20 +39,28 @@ public class Categoria {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getAutoridade() {
+        return autoridade;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setAutoridade(String autoridade) {
+        this.autoridade = autoridade;
     }
 
     public Instant getCriadoEm() {
         return criadoEm;
     }
 
+    public void setCriadoEm(Instant criadoEm) {
+        this.criadoEm = criadoEm;
+    }
+
     public Instant getAtualizadoEm() {
         return atualizadoEm;
+    }
+
+    public void setAtualizadoEm(Instant atualizadoEm) {
+        this.atualizadoEm = atualizadoEm;
     }
 
     @PrePersist
@@ -70,8 +76,8 @@ public class Categoria {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        Categoria categoria = (Categoria) o;
-        return Objects.equals(id, categoria.id);
+        Role role = (Role) o;
+        return Objects.equals(id, role.id);
     }
 
     @Override
@@ -81,9 +87,11 @@ public class Categoria {
 
     @Override
     public String toString() {
-        return "Categoria{" +
+        return "Role{" +
                 "id=" + id +
-                ", nome='" + nome + '\'' +
+                ", autoridade='" + autoridade + '\'' +
+                ", criadoEm=" + criadoEm +
+                ", atualizadoEm=" + atualizadoEm +
                 '}';
     }
 }

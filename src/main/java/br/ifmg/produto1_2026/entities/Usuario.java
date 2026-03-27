@@ -3,47 +3,34 @@ package br.ifmg.produto1_2026.entities;
 import jakarta.persistence.*;
 
 import java.time.Instant;
-import java.util.HashSet;
 import java.util.Objects;
-import java.util.Set;
 
 @Entity
-@Table(name = "tb_produto")
-public class Produto {
+@Table(name = "tb_usuario")
+public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    @Column(columnDefinition = "TEXT")
-    private String descricao;
-    private Double preco;
-    private String imgUrl;
+    private String telefone;
+    private String email;
+    private String senha;
 
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant criadoEm;
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant atualizadoEm;
 
-    @ManyToMany
-    @JoinTable(
-            name = "tb_produto_categoria", //nome da tabela muitos pra muitos
-            joinColumns = @JoinColumn(name = "id_produto"),
-            inverseJoinColumns = @JoinColumn(name = "id_categoria")
-    )
-
-    private Set<Categoria> categorias = new HashSet<>();
-
-    public Produto() {
-
+    public Usuario() {
     }
 
-    public Produto(Long id, String nome, String descricao, Double preco, String imgUrl, Instant criadoEm, Instant atualizadoEm) {
+    public Usuario(Long id, String nome, String telefone, String email, String senha, Instant criadoEm, Instant atualizadoEm) {
         this.id = id;
         this.nome = nome;
-        this.descricao = descricao;
-        this.preco = preco;
-        this.imgUrl = imgUrl;
+        this.telefone = telefone;
+        this.email = email;
+        this.senha = senha;
         this.criadoEm = criadoEm;
         this.atualizadoEm = atualizadoEm;
     }
@@ -64,28 +51,28 @@ public class Produto {
         this.nome = nome;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
-    public Double getPreco() {
-        return preco;
+    public String getEmail() {
+        return email;
     }
 
-    public void setPreco(Double preco) {
-        this.preco = preco;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getImgUrl() {
-        return imgUrl;
+    public String getSenha() {
+        return senha;
     }
 
-    public void setImgUrl(String imgUrl) {
-        this.imgUrl = imgUrl;
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     public Instant getCriadoEm() {
@@ -104,14 +91,6 @@ public class Produto {
         this.atualizadoEm = atualizadoEm;
     }
 
-    public Set<Categoria> getCategorias() {
-        return categorias;
-    }
-
-    public void setCategorias(Set<Categoria> categorias) {
-        this.categorias = categorias;
-    }
-
     @PrePersist
     public void prePersist(){
         this.criadoEm = Instant.now();
@@ -125,8 +104,8 @@ public class Produto {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        Produto produto = (Produto) o;
-        return Objects.equals(id, produto.id);
+        Usuario usuario = (Usuario) o;
+        return Objects.equals(id, usuario.id);
     }
 
     @Override
@@ -136,12 +115,12 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "Produto{" +
+        return "Usuario{" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
-                ", descricao='" + descricao + '\'' +
-                ", preco=" + preco +
-                ", imgUrl='" + imgUrl + '\'' +
+                ", telefone='" + telefone + '\'' +
+                ", email='" + email + '\'' +
+                ", senha='" + senha + '\'' +
                 ", criadoEm=" + criadoEm +
                 ", atualizadoEm=" + atualizadoEm +
                 '}';
