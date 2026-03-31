@@ -4,12 +4,17 @@ import br.ifmg.produto1_2026.entities.Categoria;
 import br.ifmg.produto1_2026.entities.Produto;
 import br.ifmg.produto1_2026.entities.Usuario;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class UsuarioDTO {
     private Long id;
     private String nome;
     private String telefone;
     private String email;
     private String senha;
+
+    private List<RoleDTO> perfis = new ArrayList<RoleDTO>();
 
     public UsuarioDTO() {
     }
@@ -20,6 +25,10 @@ public class UsuarioDTO {
         this.telefone = usuario.getTelefone();
         this.email = usuario.getEmail();
         this.senha = usuario.getSenha();
+
+        usuario.getPerfis().forEach(
+                perf -> this.perfis.add(new RoleDTO(perf))
+        );
     }
 
     public UsuarioDTO(Long id, String nome, String telefone, String email, String senha) {
@@ -68,6 +77,14 @@ public class UsuarioDTO {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public List<RoleDTO> getPerfis() {
+        return perfis;
+    }
+
+    public void setPerfis(List<RoleDTO> perfis) {
+        this.perfis = perfis;
     }
 
     @Override

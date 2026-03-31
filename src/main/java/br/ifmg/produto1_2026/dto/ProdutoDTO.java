@@ -3,12 +3,17 @@ package br.ifmg.produto1_2026.dto;
 import br.ifmg.produto1_2026.entities.Categoria;
 import br.ifmg.produto1_2026.entities.Produto;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ProdutoDTO {
     private Long id;
     private  String nome;
     private String description;
     private Double price;
     private String imgURL;
+
+    private List<CategoriaDTO> categorias = new ArrayList<CategoriaDTO>();
 
     public ProdutoDTO() {
     }
@@ -19,6 +24,10 @@ public class ProdutoDTO {
         this.description = produto.getDescricao();
         this.price = produto.getPreco();
         this.imgURL = produto.getImgUrl();
+
+        produto.getCategorias().forEach(
+                cat -> this.categorias.add(new CategoriaDTO(cat))
+        );
     }
 
     public ProdutoDTO(Long id, String nome, String description, Double price, String imgURL) {
@@ -68,6 +77,14 @@ public class ProdutoDTO {
 
     public void setImgURL(String imgURL) {
         this.imgURL = imgURL;
+    }
+
+    public List<CategoriaDTO> getCategorias() {
+        return categorias;
+    }
+
+    public void setCategorias(List<CategoriaDTO> categorias) {
+        this.categorias = categorias;
     }
 
     @Override

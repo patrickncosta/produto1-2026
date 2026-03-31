@@ -3,7 +3,9 @@ package br.ifmg.produto1_2026.entities;
 import jakarta.persistence.*;
 
 import java.time.Instant;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "tb_usuario")
@@ -21,6 +23,15 @@ public class Usuario {
     private Instant criadoEm;
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant atualizadoEm;
+
+    @ManyToMany
+    @JoinTable(
+            name = "tb_usuario_role",
+            joinColumns = @JoinColumn(name = "id_usuario"),
+            inverseJoinColumns = @JoinColumn(name = "id_perfil")
+    )
+
+    private Set<Role> perfis = new HashSet<Role>();
 
     public Usuario() {
     }
@@ -89,6 +100,14 @@ public class Usuario {
 
     public void setAtualizadoEm(Instant atualizadoEm) {
         this.atualizadoEm = atualizadoEm;
+    }
+
+    public Set<Role> getPerfis() {
+        return perfis;
+    }
+
+    public void setPerfis(Set<Role> perfis) {
+        this.perfis = perfis;
     }
 
     @PrePersist

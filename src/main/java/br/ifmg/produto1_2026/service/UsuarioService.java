@@ -1,8 +1,13 @@
 package br.ifmg.produto1_2026.service;
 
 
+import br.ifmg.produto1_2026.dto.CategoriaDTO;
+import br.ifmg.produto1_2026.dto.RoleDTO;
 import br.ifmg.produto1_2026.dto.UsuarioDTO;
+import br.ifmg.produto1_2026.entities.Categoria;
+import br.ifmg.produto1_2026.entities.Role;
 import br.ifmg.produto1_2026.entities.Usuario;
+import br.ifmg.produto1_2026.repositories.RoleRepository;
 import br.ifmg.produto1_2026.repositories.UsuarioRepository;
 import br.ifmg.produto1_2026.service.exception.ErroNoBancoDeDados;
 import br.ifmg.produto1_2026.service.exception.RegistroNaoEncontrado;
@@ -11,6 +16,7 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -23,6 +29,9 @@ public class UsuarioService {
 
     @Autowired
     private UsuarioRepository usuarioRepository;
+
+    @Autowired
+    private RoleRepository roleRepository;
 
     @Transactional(readOnly = true)
 
@@ -55,6 +64,12 @@ public class UsuarioService {
         entity.setEmail(dto.getEmail());
         entity.setSenha(dto.getSenha());
 
+        entity.getPerfis().clear();
+        for(RoleDTO perfDto: dto.getPerfis()){
+            Role perf = roleRepository.getReferenceById(perfDto.getId());
+            entity.getPerfis().add(perf);
+        }
+
         Usuario novo = usuarioRepository.save(entity);
         return new UsuarioDTO(novo);
     }
@@ -81,12 +96,24 @@ public class UsuarioService {
 
         Usuario entity = usuarioRepository.getReferenceById(id);
 
+        entity = copyDtoToEntity(dto, entity);
+
+        return new UsuarioDTO(entity);
+    }
+
+    @NonNull
+    private Usuario copyDtoToEntity(UsuarioDTO dto, Usuario entity) {
         entity.setNome(dto.getNome());
         entity.setTelefone(dto.getTelefone());
         entity.setEmail(dto.getEmail());
         entity.setSenha(dto.getSenha());
         entity = usuarioRepository.save(entity);
 
-        return new UsuarioDTO(entity);
+        entity.getPerfis().clear();
+        for(RoleDTO perfDto: dto.getPerfis()){
+            Role perf = roleRepository.getReferenceById(perfDto.getId());
+            entity.getPerfis().add(perf);
+        }
+        return entity;
     }
 }
