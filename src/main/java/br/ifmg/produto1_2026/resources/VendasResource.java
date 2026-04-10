@@ -15,12 +15,12 @@ import java.net.URI;
 @RestController
 @RequestMapping("/venda")
 public class VendasResource {
-    private AtivacaoClienteService ativacaoCliente;
-
     public VendasResource(AtivacaoClienteService ativacaoCliente) {
         this.ativacaoCliente = ativacaoCliente;
         System.out.println("Camada de resource criada");
     }
+
+    private AtivacaoClienteService ativacaoCliente;
 
     @PostMapping
     public ResponseEntity<String> insert(){
