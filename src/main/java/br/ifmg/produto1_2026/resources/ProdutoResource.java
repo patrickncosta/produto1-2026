@@ -35,7 +35,7 @@ public class ProdutoResource {
                     @ApiResponse(description = "Erro interno no servidor", responseCode = "500")
             }
     )
-    public ResponseEntity<Page<ProdutoDTO>> produto(Pageable pageable){
+    public ResponseEntity<Page<ProdutoDTO>> produtos(Pageable pageable){
 
         //PageRequest pageRequest = PageRequest.of(page, size, Sort.Direction.valueOf(direction), sort);
 
@@ -82,13 +82,39 @@ public class ProdutoResource {
     }
 
     @DeleteMapping("/{id}")
+    @Operation(
+            summary = "Endpoint para apagar um produto",
+            description = "A plataforma precisa disponibilizar a deleção de um produto...",
+            responses = {
+                    @ApiResponse(description = "Sucesso", responseCode = "204"),
+                    @ApiResponse(description = "Bad request", responseCode = "400", content = {}),
+                    @ApiResponse(description = "Não autorizado", responseCode = "401"),
+                    @ApiResponse(description = "Proibido no seu perfil", responseCode = "403"),
+                    @ApiResponse(description = "Não encontrado", responseCode = "404"),
+                    @ApiResponse(description = "Erro ao processar", responseCode = "422"),
+                    @ApiResponse(description = "Erro interno no servidor", responseCode = "500")
+            }
+    )
     public ResponseEntity<Void> delete(@PathVariable Long id){
         produtoService.delete(id);
 
         return ResponseEntity.noContent().build();
     }
 
-    @PutMapping("/{id}")
+    @PutMapping(value="/{id}", produces="application/json")
+    @Operation(
+            summary = "Endpoint para atualizar um produto",
+            description = "A plataforma precisa disponibilizar uma atualização de produtos...",
+            responses = {
+                    @ApiResponse(description = "OK", responseCode = "200"),
+                    @ApiResponse(description = "Bad request", responseCode = "400", content = {}),
+                    @ApiResponse(description = "Não autorizado", responseCode = "401"),
+                    @ApiResponse(description = "Proibido no seu perfil", responseCode = "403"),
+                    @ApiResponse(description = "Não encontrado", responseCode = "404"),
+                    @ApiResponse(description = "Erro ao processar", responseCode = "422"),
+                    @ApiResponse(description = "Erro interno no servidor", responseCode = "500")
+            }
+    )
     public ResponseEntity<ProdutoDTO> update(@PathVariable Long id, @RequestBody ProdutoDTO dto){
         ProdutoDTO retorno = produtoService.update(id,dto);
 
