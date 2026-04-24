@@ -9,6 +9,8 @@ import br.ifmg.produto1_2026.repositories.ProdutoRepository;
 import br.ifmg.produto1_2026.resources.ProdutoResource;
 import br.ifmg.produto1_2026.service.exception.ErroNoBancoDeDados;
 import br.ifmg.produto1_2026.service.exception.RegistroNaoEncontrado;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
@@ -28,6 +30,8 @@ import java.util.Optional;
 @Service
 public class ProdutoService {
 
+    private static final Logger logger = LoggerFactory.getLogger(ProdutoService.class);
+
     @Autowired
     private ProdutoRepository produtoRepository;
     @Autowired
@@ -36,6 +40,12 @@ public class ProdutoService {
     @Transactional(readOnly = true)
 
     public Page<ProdutoDTO> findAll(Pageable pageRequest){
+
+        logger.info("Consultando a lista de produtos");
+        logger.error("Consultando a lista de produtos");
+        logger.warn("Consultando a lista de produtos");
+        logger.debug("Consultando {} a lista {} de produtos",123,"teste");
+
         //lista com os dados do bd
         Page<Produto> produtos = produtoRepository.findAll(pageRequest);
 

@@ -2,9 +2,12 @@ package br.ifmg.produto1_2026.resources;
 
 import br.ifmg.produto1_2026.dto.ProdutoDTO;
 import br.ifmg.produto1_2026.service.ProdutoService;
+import ch.qos.logback.classic.LoggerContext;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
