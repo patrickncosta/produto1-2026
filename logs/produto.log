@@ -1,18 +1,17 @@
-2026-04-28 10:36:18.407 [http-nio-8080-exec-1] ERROR >>> b.i.p.service.ProdutoService - Consultando a lista de produtos
-2026-04-28 11:23:22.973 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-04-28 11:23:23.036 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 772 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-04-28 11:23:23.037 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
-2026-04-28 11:23:24.721 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-04-28 11:23:24.731 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-04-28 11:23:24.732 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-04-28 11:23:24.812 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-04-28 11:23:24.991 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-04-28 11:23:25.185 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2026-04-28 11:23:25.187 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-04-28 11:23:25.237 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-04-28 11:23:25.291 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
-2026-04-28 11:23:25.333 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-04-28 11:23:25.733 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2026-05-05 10:14:53.133 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-05 10:14:53.190 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 21896 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
+2026-05-05 10:14:53.191 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
+2026-05-05 10:14:55.475 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-05 10:14:55.478 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-05 10:14:55.479 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-05-05 10:14:55.573 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-05 10:14:55.815 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-05 10:14:56.162 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-05 10:14:56.163 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-05 10:14:56.198 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-05 10:14:56.287 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-05-05 10:14:56.345 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-05 10:14:56.832 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -20,102 +19,34 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-04-28 11:23:26.885 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-04-28 11:23:28.071 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-04-28 11:23:28.099 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 5.776 seconds (process running for 6.534)
-2026-04-28 11:23:28.102 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-04-28 11:23:28.103 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-04-28 11:26:05.999 [http-nio-8080-exec-3] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-28 11:26:27.730 [http-nio-8080-exec-3] ERROR >>> o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailSendException: Mail server connection failed. Failed messages: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.google.com, 587; timeout -1;
-  nested exception is:
-	java.net.ConnectException: Connection timed out: connect; message exceptions (1) are:
-Failed message 1: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.google.com, 587; timeout -1;
-  nested exception is:
-	java.net.ConnectException: Connection timed out: connect] with root cause
-java.net.ConnectException: Connection timed out: connect
-	at java.base/sun.nio.ch.Net.connect0(Native Method)
-	at java.base/sun.nio.ch.Net.connect(Net.java:546)
-	at java.base/sun.nio.ch.Net.connect(Net.java:535)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
-	at java.base/java.net.Socket.connect(Socket.java:659)
-	at java.base/java.net.Socket.connect(Socket.java:597)
-	at org.eclipse.angus.mail.util.SocketFetcher.createSocket(SocketFetcher.java:368)
-	at org.eclipse.angus.mail.util.SocketFetcher.getSocket(SocketFetcher.java:243)
-	at org.eclipse.angus.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2193)
-	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:729)
-	at jakarta.mail.Service.connect(Service.java:345)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:480)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:399)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
-	at org.springframework.mail.MailSender.send(MailSender.java:42)
-	at br.ifmg.produto1_2026.service.EmailService.sendEmail(EmailService.java:30)
-	at br.ifmg.produto1_2026.resources.EmailResource.sendEmail(EmailResource.java:22)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1775)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-2026-04-28 11:32:07.741 [HikariPool-1:housekeeper] WARN  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m42s339ms546µs600ns).
-2026-04-28 11:32:10.557 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-04-28 11:32:10.560 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-04-28 11:32:13.765 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-04-28 11:32:13.826 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 12828 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-04-28 11:32:13.828 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
-2026-04-28 11:32:15.556 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-04-28 11:32:15.559 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-04-28 11:32:15.560 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-04-28 11:32:15.638 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-04-28 11:32:15.840 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-04-28 11:32:16.036 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2026-04-28 11:32:16.038 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-04-28 11:32:16.092 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-04-28 11:32:16.139 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
-2026-04-28 11:32:16.170 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-04-28 11:32:16.561 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2026-05-05 10:14:58.082 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-05 10:14:59.071 [main] WARN  >>> o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0301736b-a21c-4092-85e5-a9c40c83e087
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-05 10:14:59.223 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-05 10:14:59.261 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 7.048 seconds (process running for 11.212)
+2026-05-05 10:14:59.264 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-05 10:14:59.265 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-05 10:18:01.621 [http-nio-8080-exec-2] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-05 10:30:32.900 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-05 10:30:32.904 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-05 10:30:47.524 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-05 10:30:47.557 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 19492 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
+2026-05-05 10:30:47.558 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
+2026-05-05 10:30:49.589 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-05 10:30:49.591 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-05 10:30:49.591 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-05-05 10:30:49.629 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-05 10:30:49.792 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-05 10:30:49.926 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-05 10:30:49.927 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-05 10:30:49.949 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-05 10:30:49.983 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-05-05 10:30:50.020 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-05 10:30:50.325 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -123,84 +54,55 @@ java.net.ConnectException: Connection timed out: connect
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-04-28 11:32:17.660 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-04-28 11:32:18.793 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-04-28 11:32:18.840 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 5.751 seconds (process running for 6.619)
-2026-04-28 11:32:18.843 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-04-28 11:32:18.843 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-04-28 11:33:11.916 [http-nio-8080-exec-5] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-04-28 11:33:33.636 [http-nio-8080-exec-5] ERROR >>> o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailSendException: Mail server connection failed. Failed messages: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.google.com, 587; timeout -1;
-  nested exception is:
-	java.net.ConnectException: Connection timed out: connect; message exceptions (1) are:
-Failed message 1: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.google.com, 587; timeout -1;
-  nested exception is:
-	java.net.ConnectException: Connection timed out: connect] with root cause
-java.net.ConnectException: Connection timed out: connect
-	at java.base/sun.nio.ch.Net.connect0(Native Method)
-	at java.base/sun.nio.ch.Net.connect(Net.java:546)
-	at java.base/sun.nio.ch.Net.connect(Net.java:535)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
-	at java.base/java.net.Socket.connect(Socket.java:659)
-	at java.base/java.net.Socket.connect(Socket.java:597)
-	at org.eclipse.angus.mail.util.SocketFetcher.createSocket(SocketFetcher.java:368)
-	at org.eclipse.angus.mail.util.SocketFetcher.getSocket(SocketFetcher.java:243)
-	at org.eclipse.angus.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2193)
-	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:729)
-	at jakarta.mail.Service.connect(Service.java:345)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:480)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:399)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
-	at org.springframework.mail.MailSender.send(MailSender.java:42)
-	at br.ifmg.produto1_2026.service.EmailService.sendEmail(EmailService.java:30)
-	at br.ifmg.produto1_2026.resources.EmailResource.sendEmail(EmailResource.java:22)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1775)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-2026-04-28 11:41:20.376 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-04-28 11:41:20.380 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-05 10:30:51.275 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-05 10:30:51.935 [main] WARN  >>> o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7f4ea990-7ec6-4e03-95b4-14793b868e26
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-05 10:30:52.568 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-05 10:30:52.585 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 5.599 seconds (process running for 7.421)
+2026-05-05 10:30:52.587 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-05 10:30:52.587 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-05 10:30:58.195 [http-nio-8080-exec-8] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-05 10:30:58.880 [http-nio-8080-exec-8] WARN  >>> o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-05-05 10:40:10.650 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-05 10:40:10.652 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-05 10:40:13.983 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-05 10:40:14.025 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 1860 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
+2026-05-05 10:40:14.026 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
+2026-05-05 10:40:15.195 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-05 10:40:15.196 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-05 10:40:15.197 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-05-05 10:40:15.249 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-05 10:40:15.348 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-05 10:40:15.476 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-05 10:40:15.477 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-05 10:40:15.498 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-05 10:40:15.522 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-05-05 10:40:15.541 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-05 10:40:15.748 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-05 10:40:16.470 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-05 10:40:17.030 [main] WARN  >>> o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 3da10012-bb63-414f-905c-d7ec8047c279
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-05 10:40:17.815 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-05 10:40:17.855 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 4.231 seconds (process running for 4.864)
+2026-05-05 10:40:17.859 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-05 10:40:17.859 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-05 11:36:46.713 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-05 11:36:46.718 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

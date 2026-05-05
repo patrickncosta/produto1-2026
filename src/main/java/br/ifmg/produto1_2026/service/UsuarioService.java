@@ -4,6 +4,7 @@ package br.ifmg.produto1_2026.service;
 import br.ifmg.produto1_2026.dto.CategoriaDTO;
 import br.ifmg.produto1_2026.dto.RoleDTO;
 import br.ifmg.produto1_2026.dto.UsuarioDTO;
+import br.ifmg.produto1_2026.dto.UsuarioInsertDTO;
 import br.ifmg.produto1_2026.entities.Categoria;
 import br.ifmg.produto1_2026.entities.Role;
 import br.ifmg.produto1_2026.entities.Usuario;
@@ -17,6 +18,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.lang.NonNull;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -33,8 +35,10 @@ public class UsuarioService {
     @Autowired
     private RoleRepository roleRepository;
 
-    @Transactional(readOnly = true)
+    @Autowired
+    private PasswordEncoder encoder;
 
+    @Transactional(readOnly = true)
     public Page<UsuarioDTO> findAll(Pageable pageRequest){
 
         //lista com os dados do bd
@@ -56,19 +60,14 @@ public class UsuarioService {
     }
 
     @Transactional
-    public UsuarioDTO insert(UsuarioDTO dto){
+    public UsuarioDTO insert(UsuarioInsertDTO dto){
 
         Usuario entity = new Usuario();
-        entity.setNome(dto.getNome());
-        entity.setTelefone(dto.getTelefone());
-        entity.setEmail(dto.getEmail());
-        entity.setSenha(dto.getSenha());
+        copyDtoToEntity(dto,entity);
+        entity.setSenha(
+                encoder.encode(dto.getSenha())
+        );
 
-        entity.getPerfis().clear();
-        for(RoleDTO perfDto: dto.getPerfis()){
-            Role perf = roleRepository.getReferenceById(perfDto.getId());
-            entity.getPerfis().add(perf);
-        }
 
         Usuario novo = usuarioRepository.save(entity);
         return new UsuarioDTO(novo);
@@ -106,7 +105,6 @@ public class UsuarioService {
         entity.setNome(dto.getNome());
         entity.setTelefone(dto.getTelefone());
         entity.setEmail(dto.getEmail());
-        entity.setSenha(dto.getSenha());
         entity = usuarioRepository.save(entity);
 
         entity.getPerfis().clear();

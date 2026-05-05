@@ -3,16 +3,20 @@ package br.ifmg.produto1_2026.dto;
 import br.ifmg.produto1_2026.entities.Categoria;
 import br.ifmg.produto1_2026.entities.Produto;
 import br.ifmg.produto1_2026.entities.Usuario;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class UsuarioDTO {
     private Long id;
+    @NotBlank(message="campo nome obrigatório")
     private String nome;
     private String telefone;
+    @NotBlank(message = "Email obrigatório")
+    @Email(message = "Email invalido")
     private String email;
-    private String senha;
 
     private List<RoleDTO> perfis = new ArrayList<RoleDTO>();
 
@@ -24,19 +28,17 @@ public class UsuarioDTO {
         this.nome = usuario.getNome();
         this.telefone = usuario.getTelefone();
         this.email = usuario.getEmail();
-        this.senha = usuario.getSenha();
 
         usuario.getPerfis().forEach(
                 perf -> this.perfis.add(new RoleDTO(perf))
         );
     }
 
-    public UsuarioDTO(Long id, String nome, String telefone, String email, String senha) {
+    public UsuarioDTO(Long id, String nome, String telefone, String email) {
         this.id = id;
         this.nome = nome;
         this.telefone = telefone;
         this.email = email;
-        this.senha = senha;
     }
 
     public Long getId() {
@@ -71,13 +73,6 @@ public class UsuarioDTO {
         this.email = email;
     }
 
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
 
     public List<RoleDTO> getPerfis() {
         return perfis;
@@ -94,7 +89,6 @@ public class UsuarioDTO {
                 ", nome='" + nome + '\'' +
                 ", telefone='" + telefone + '\'' +
                 ", email='" + email + '\'' +
-                ", senha='" + senha + '\'' +
                 '}';
     }
 }

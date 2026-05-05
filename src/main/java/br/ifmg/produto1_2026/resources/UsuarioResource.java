@@ -1,8 +1,10 @@
 package br.ifmg.produto1_2026.resources;
 
 import br.ifmg.produto1_2026.dto.UsuarioDTO;
+import br.ifmg.produto1_2026.dto.UsuarioInsertDTO;
 import br.ifmg.produto1_2026.entities.Usuario;
 import br.ifmg.produto1_2026.service.UsuarioService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -43,7 +45,7 @@ public class UsuarioResource {
     }
 
     @PostMapping
-    public ResponseEntity<UsuarioDTO> insert(@RequestBody UsuarioDTO dto){
+    public ResponseEntity<UsuarioDTO> insert(@RequestBody @Valid UsuarioInsertDTO dto){
 
         //inserindo no BD e pegando o objeto inserido
         UsuarioDTO retorno = usuarioService.insert(dto);
@@ -62,7 +64,7 @@ public class UsuarioResource {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<UsuarioDTO> update(@PathVariable Long id, @RequestBody UsuarioDTO dto){
+    public ResponseEntity<UsuarioDTO> update(@PathVariable Long id, @RequestBody @Valid UsuarioDTO dto){
         UsuarioDTO retorno = usuarioService.update(id,dto);
 
         return ResponseEntity.ok().body(retorno);
