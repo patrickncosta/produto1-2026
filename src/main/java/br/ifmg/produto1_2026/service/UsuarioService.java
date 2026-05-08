@@ -8,6 +8,7 @@ import br.ifmg.produto1_2026.dto.UsuarioInsertDTO;
 import br.ifmg.produto1_2026.entities.Categoria;
 import br.ifmg.produto1_2026.entities.Role;
 import br.ifmg.produto1_2026.entities.Usuario;
+import br.ifmg.produto1_2026.projections.UserDetailsProjection;
 import br.ifmg.produto1_2026.repositories.RoleRepository;
 import br.ifmg.produto1_2026.repositories.UsuarioRepository;
 import br.ifmg.produto1_2026.service.exception.ErroNoBancoDeDados;
@@ -18,6 +19,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.lang.NonNull;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,7 +31,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UsuarioService {
+public class UsuarioService implements UserDetailsService {
 
     @Autowired
     private UsuarioRepository usuarioRepository;
@@ -113,5 +117,21 @@ public class UsuarioService {
             entity.getPerfis().add(perf);
         }
         return entity;
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
+
+        List<UserDetailsProjection> dados = usuarioRepository.loadUserByUserName(userName);
+
+        if(dados.isEmpty()){
+            throw new UsernameNotFoundException(userName);
+        }
+
+        usuarioRepository.loadUserByUserName(userName);
+
+        Usuario usuario = new Usuario();
+
+        return null;
     }
 }

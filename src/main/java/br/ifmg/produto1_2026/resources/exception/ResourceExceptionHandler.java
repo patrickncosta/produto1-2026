@@ -6,6 +6,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
@@ -39,5 +41,33 @@ public class ResourceExceptionHandler {
         error.setPath(req.getRequestURI());
 
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(error);
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<StandartError> methodArgumentNotValidException(MethodArgumentNotValidException e, HttpServletRequest req){
+        ValidationError error = new ValidationError();
+
+        error.setStatus(HttpStatus.UNPROCESSABLE_ENTITY.value());
+        error.setMessage(e.getMessage());
+        error.setError("Erro de validação nos dados enviados :(");
+        error.setTimestamp(Instant.now());
+        error.setPath(req.getRequestURI());
+
+        for(FieldError field :
+                e.getBindingResult().getFieldErrors()){
+
+            error.addFieldMessage(
+                    new FieldMessage(field.getField(),field.getDefaultMessage())
+            );
+        }
+
+        /*e.getBindingResult().getAllErrors().forEach(
+                (err) -> {
+                    error.addFieldMessage(
+                            new FieldMessage(err.get)
+                    );
+                });*/
+
+        return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(error);
     }
 }
