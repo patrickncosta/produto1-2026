@@ -124,14 +124,25 @@ public class UsuarioService implements UserDetailsService {
 
         List<UserDetailsProjection> dados = usuarioRepository.loadUserByUserName(userName);
 
+        usuarioRepository.loadUserByUserName(userName);
+
         if(dados.isEmpty()){
             throw new UsernameNotFoundException(userName);
         }
 
-        usuarioRepository.loadUserByUserName(userName);
 
         Usuario usuario = new Usuario();
+        usuario.setSenha(dados.getFirst().getPassword());
+        usuario.setEmail(dados.getFirst().getUsername());
 
-        return null;
+        for(UserDetailsProjection dado : dados) {
+            usuario.addRole(
+                    new Role(dado.getRoleId(),
+                            dado.getAuthority()
+                    )
+            );
+        }
+
+        return usuario;
     }
 }

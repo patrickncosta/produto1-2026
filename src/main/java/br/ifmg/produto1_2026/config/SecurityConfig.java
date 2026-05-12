@@ -11,7 +11,7 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 public class SecurityConfig {
-
+/*
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
         http.csrf(crsf -> crsf.disable()).
@@ -21,13 +21,13 @@ public class SecurityConfig {
                 );
 
         return http.build();
-    }
+    }*/
 
     @Bean
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
-
+/*
     @Bean
     //@Profile("test")
     @Order(1)
@@ -35,5 +35,5 @@ public class SecurityConfig {
         http.securityMatcher(PathRequest.toH2Console()).csrf(csrf -> csrf.disable())
                 .headers(headers -> headers.frameOptions(frameOptions -> frameOptions.disable()));
         return http.build();
-    }
+    }*/
 }

@@ -20,7 +20,7 @@ public class Role implements GrantedAuthority {
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant atualizadoEm;
 
-    public Role() {
+    public Role(Long roleId, String authority) {
     }
 
     public Role(Long id, String autoridade, Instant criadoEm, Instant atualizadoEm) {
