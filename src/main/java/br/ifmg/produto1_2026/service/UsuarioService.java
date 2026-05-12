@@ -131,6 +131,7 @@ public class UsuarioService implements UserDetailsService {
         }
 
 
+
         Usuario usuario = new Usuario();
         usuario.setSenha(dados.getFirst().getPassword());
         usuario.setEmail(dados.getFirst().getUsername());
@@ -144,5 +145,6 @@ public class UsuarioService implements UserDetailsService {
         }
 
         return usuario;
+
     }
 }
