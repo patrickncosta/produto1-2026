@@ -30,6 +30,9 @@ public class Role implements GrantedAuthority {
         this.atualizadoEm = atualizadoEm;
     }
 
+    public Role() {
+
+    }
 
 
     public Long getId() {
