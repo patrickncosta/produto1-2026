@@ -21,6 +21,8 @@ public class Role implements GrantedAuthority {
     private Instant atualizadoEm;
 
     public Role(Long roleId, String authority) {
+          this.id = roleId;
+          this.autoridade = authority;
     }
 
     public Role(Long id, String autoridade, Instant criadoEm, Instant atualizadoEm) {

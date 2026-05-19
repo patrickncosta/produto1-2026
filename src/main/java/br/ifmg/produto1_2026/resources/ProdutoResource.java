@@ -14,6 +14,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
@@ -60,6 +61,7 @@ public class ProdutoResource {
         return ResponseEntity.ok().body(dto);
     }
 
+    @PreAuthorize("hasAnyRole('ROLE_ADMINISTRADOR', 'ROLE_VENDEDOR')")
     @PostMapping(produces = "aplication/json")
     @Operation(
             summary = "Endpoint para inserir um produto",
@@ -84,6 +86,7 @@ public class ProdutoResource {
         return ResponseEntity.created(location).body(retorno);
     }
 
+    @PreAuthorize("hasAnyRole('ROLE_ADMINISTRADOR', 'ROLE_VENDEDOR')")
     @DeleteMapping("/{id}")
     @Operation(
             summary = "Endpoint para apagar um produto",
@@ -104,6 +107,7 @@ public class ProdutoResource {
         return ResponseEntity.noContent().build();
     }
 
+    @PreAuthorize("hasAnyRole('ROLE_ADMINISTRADOR', 'ROLE_VENDEDOR')")
     @PutMapping(value="/{id}", produces="application/json")
     @Operation(
             summary = "Endpoint para atualizar um produto",
