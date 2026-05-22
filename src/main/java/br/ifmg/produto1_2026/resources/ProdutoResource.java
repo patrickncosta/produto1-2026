@@ -1,6 +1,7 @@
 package br.ifmg.produto1_2026.resources;
 
 import br.ifmg.produto1_2026.dto.ProdutoDTO;
+import br.ifmg.produto1_2026.dto.ProdutoListDTO;
 import br.ifmg.produto1_2026.service.ProdutoService;
 import ch.qos.logback.classic.LoggerContext;
 import io.swagger.v3.oas.annotations.Operation;
@@ -30,7 +31,30 @@ public class ProdutoResource {
     @Autowired
     private ProdutoService produtoService;
 
+    //novo
     @GetMapping(produces = "application/json")
+    @Operation(
+            summary = "Endpoint para retornar todos os produtos",
+            description = "A plataforma precisa disponibilizar uma listagem de produtos...",
+            responses = {
+                    @ApiResponse(description = "Lista retornada com sucesso", responseCode = "200"),
+                    @ApiResponse(description = "Erro interno no servidor", responseCode = "500")
+            }
+    )
+    public ResponseEntity<Page<ProdutoListDTO>> produtos(
+                        @RequestParam(value="categoriasId", defaultValue = "0") String categoriasID,
+                        @RequestParam(value="name", defaultValue = "") String nome,
+                        Pageable pageable){
+
+        //PageRequest pageRequest = PageRequest.of(page, size, Sort.Direction.valueOf(direction), sort);
+
+        Page<ProdutoListDTO> produtos = produtoService.findAll(categoriasID, nome, pageable);
+        return ResponseEntity.ok().body(produtos);
+    };
+
+
+    //velho
+    @GetMapping(value = "/v1/", produces = "application/json")
     @Operation(
             summary = "Endpoint para retornar todos os produtos",
             description = "A plataforma precisa disponibilizar uma listagem de produtos...",
