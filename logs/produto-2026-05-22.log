@@ -1,0 +1,29 @@
+2026-05-22 11:20:08.499 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-05-22 11:20:08.613 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 30416 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
+2026-05-22 11:20:08.615 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
+2026-05-22 11:20:13.319 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-22 11:20:13.323 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-22 11:20:13.324 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-05-22 11:20:13.581 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-05-22 11:20:13.908 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-05-22 11:20:14.252 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-22 11:20:14.254 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-22 11:20:14.335 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-22 11:20:14.561 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-05-22 11:20:14.673 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-05-22 11:20:15.522 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-22 11:20:16.946 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-22 11:20:22.964 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-22 11:20:23.044 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 18.503 seconds (process running for 26.867)
+2026-05-22 11:20:23.299 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-22 11:20:23.299 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-22 11:33:40.218 [HikariPool-1:housekeeper] WARN  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m55s735ms246µs600ns).
+2026-05-22 11:36:22.725 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-22 11:36:22.729 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
