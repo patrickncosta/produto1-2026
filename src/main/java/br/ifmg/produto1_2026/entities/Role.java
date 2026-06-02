@@ -13,7 +13,7 @@ public class Role implements GrantedAuthority {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String autoridade;
+    private String nome;
 
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant criadoEm;
@@ -22,12 +22,12 @@ public class Role implements GrantedAuthority {
 
     public Role(Long roleId, String authority) {
           this.id = roleId;
-          this.autoridade = authority;
+          this.nome = authority;
     }
 
     public Role(Long id, String autoridade, Instant criadoEm, Instant atualizadoEm) {
         this.id = id;
-        this.autoridade = autoridade;
+        this.nome = autoridade;
         this.criadoEm = criadoEm;
         this.atualizadoEm = atualizadoEm;
     }
@@ -45,12 +45,12 @@ public class Role implements GrantedAuthority {
         this.id = id;
     }
 
-    public String getAutoridade() {
-        return autoridade;
+    public String getNome() {
+        return nome;
     }
 
-    public void setAutoridade(String autoridade) {
-        this.autoridade = autoridade;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public Instant getCriadoEm() {
@@ -95,7 +95,7 @@ public class Role implements GrantedAuthority {
     public String toString() {
         return "Role{" +
                 "id=" + id +
-                ", autoridade='" + autoridade + '\'' +
+                ", nome='" + nome + '\'' +
                 ", criadoEm=" + criadoEm +
                 ", atualizadoEm=" + atualizadoEm +
                 '}';
@@ -103,6 +103,6 @@ public class Role implements GrantedAuthority {
 
     @Override
     public String getAuthority() {
-        return autoridade;
+        return this.nome;
     }
 }

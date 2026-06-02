@@ -4,19 +4,19 @@ import br.ifmg.produto1_2026.entities.Role;
 
 public class RoleDTO {
     private Long id;
-    private String autoridade;
+    private String nome;
 
     public RoleDTO() {
     }
 
-    public RoleDTO(Role role) {
-        this.id = role.getId();
-        this.autoridade = role.getAutoridade();
+    public RoleDTO(Long id, String nome) {
+        this.id = id;
+        this.nome = nome;
     }
 
-    public RoleDTO(Long id, String autoridade) {
-        this.id = id;
-        this.autoridade = autoridade;
+    public RoleDTO(Role role) {
+        this.id = role.getId();
+        this.nome = role.getAuthority();
     }
 
     public Long getId() {
@@ -27,19 +27,19 @@ public class RoleDTO {
         this.id = id;
     }
 
-    public String getAutoridade() {
-        return autoridade;
+    public String getNome() {
+        return nome;
     }
 
-    public void setAutoridade(String autoridade) {
-        this.autoridade = autoridade;
+    public void setNome(String autoridade) {
+        this.nome = autoridade;
     }
 
     @Override
     public String toString() {
         return "RoleDTO{" +
                 "id=" + id +
-                ", autoridade='" + autoridade + '\'' +
+                ", nome='" + nome + '\'' +
                 '}';
     }
 }

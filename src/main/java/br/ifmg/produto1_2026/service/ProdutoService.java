@@ -35,134 +35,129 @@ public class ProdutoService {
 
     @Autowired
     private ProdutoRepository produtoRepository;
+
     @Autowired
     private CategoriaRepository categoriaRepository;
 
-    //novo:
+    // novo:
     @Transactional(readOnly = true)
-
     public Page<ProdutoListDTO> findAll(String categoriasID, String name, Pageable pageRequest){
 
-        //convertemos uma String em uma lista de Longs
-        List<Long> categoriasIDs = null;
-        if(categoriasIDs != null && !categoriasID.equals("0")){
-            categoriasIDs = Arrays.asList(
-                                    categoriasID.split(","))
-                    .stream().map(n->Long.valueOf(n)).toList();
+        // 1. A lista precisa nascer instanciada para não dar NullPointerException
+        List<Long> categoriasIDs = new ArrayList<>();
+
+        // 2. A verificação é feita na String, e a conversão ocorre se ela for válida
+        if(categoriasID != null && !categoriasID.equals("0")){
+            categoriasIDs = Arrays.stream(categoriasID.split(","))
+                    .map(Long::valueOf)
+                    .toList();
         }
 
-
-        //lista com os dados do bd. Essa lista vem com os dados em Projections
+        // Lista com os dados do bd. Essa lista vem com os dados em Projections
         Page<ProdutoProjection> produtos = produtoRepository.searchProdutos(categoriasIDs, name, pageRequest);
 
-        //converter os projections em DTOs, pois a camada de cima so trabalha com DTOs
-        List<ProdutoListDTO> produtosDTO = produtos.stream().map(p->new ProdutoListDTO(p)).toList();
+        // Converter os projections em DTOs, pois a camada de cima so trabalha com DTOs
+        List<ProdutoListDTO> produtosDTO = produtos.stream().map(p -> new ProdutoListDTO(p)).toList();
 
-        return new PageImpl<>(produtosDTO, pageRequest, produtos.getTotalPages());
-
-
-        /*Pageable pageable= PageRequest.of(0,10, Sort.by("id"));
-
-        return produtos.stream().map(p -> new ProdutoListDTO(p)
-                .add(linkTo(methodOn(ProdutoResource.class).produtos(pageable)).withSelfRel())
-                .add(linkTo(methodOn(ProdutoResource.class).produto(p.getID())).withRel("Obter produto pelo iD"))
-        );*/
+        // 3. PageImpl exige o total de elementos do banco
+        return new PageImpl<>(produtosDTO, pageRequest, produtos.getTotalElements());
     }
 
-    //velho:
+    // velho:
     @Transactional(readOnly = true)
-
     public Page<ProdutoDTO> findAll(Pageable pageRequest){
 
         logger.info("Consultando a lista de produtos");
         logger.error("Consultando a lista de produtos");
         logger.warn("Consultando a lista de produtos");
-        logger.debug("Consultando {} a lista {} de produtos",123,"teste");
+        logger.debug("Consultando {} a lista {} de produtos", 123, "teste");
 
-        //lista com os dados do bd
+        // Lista com os dados do bd
         Page<Produto> produtos = produtoRepository.findAll(pageRequest);
 
-
-        Pageable pageable= PageRequest.of(0,10, Sort.by("id"));
-
         return produtos.map(produto -> new ProdutoDTO(produto)
-                .add(linkTo(methodOn(ProdutoResource.class).produtos(pageable)).withSelfRel())
+                // 4. Atualizado para enviar os 3 parâmetros exigidos pelo controller
+                .add(linkTo(methodOn(ProdutoResource.class).produtos(null, null, pageRequest)).withSelfRel())
                 .add(linkTo(methodOn(ProdutoResource.class).produto(produto.getId())).withRel("Obter produto pelo iD"))
         );
     }
 
+    @Transactional(readOnly = true)
     public ProdutoDTO findById(Long id) {
-        //buscamos no bd o produto. O resultado é um objeto do tipo Optional
+        // Buscamos no bd o produto. O resultado é um objeto do tipo Optional
         Optional<Produto> opt = produtoRepository.findById(id);
 
-        //buscamos o produto dentro do objeto Optional
-        Produto produto = opt.orElseThrow(()->new RegistroNaoEncontrado("Produto não encontrada"));
+        // Buscamos o produto dentro do objeto Optional
+        Produto produto = opt.orElseThrow(() -> new RegistroNaoEncontrado("Produto não encontrado"));
 
         ProdutoDTO dto = new ProdutoDTO(produto);
 
-        Pageable pageable= PageRequest.of(0,10, Sort.by("id"));
+        Pageable pageable = PageRequest.of(0, 10, Sort.by("id"));
 
-        //convertemos a entidade de DTO
+        // Convertemos a entidade em DTO
         return dto
                 .add(linkTo(methodOn(ProdutoResource.class).produto(produto.getId())).withSelfRel())
-                .add(linkTo(methodOn(ProdutoResource.class).produtos(pageable)).withRel("todos os produtos"))
+                // 4. Atualizado para 3 parâmetros
+                .add(linkTo(methodOn(ProdutoResource.class).produtos(null, null, pageable)).withRel("todos os produtos"))
                 .add(linkTo(methodOn(ProdutoResource.class).update(produto.getId(), dto)).withRel("atualizar o produto"))
-                .add(linkTo(methodOn(ProdutoResource.class).delete(produto.getId())).withRel("apagar o produto"))
-                ;
-
+                .add(linkTo(methodOn(ProdutoResource.class).delete(produto.getId())).withRel("apagar o produto"));
     }
 
     @Transactional
     public ProdutoDTO insert(ProdutoDTO dto){
 
         Produto entity = new Produto();
+        // Mantive o seu copyDtoToEntity, pois ele trata as categorias corretamente!
         copyDtoToEntity(dto, entity);
 
-        Pageable pageable= PageRequest.of(0,10, Sort.by("id"));
+        Pageable pageable = PageRequest.of(0, 10, Sort.by("id"));
 
         Produto novo = produtoRepository.save(entity);
         return new ProdutoDTO(novo)
-                .add(linkTo(methodOn(ProdutoResource.class).insert(dto)).withSelfRel())
+                .add(linkTo(methodOn(ProdutoResource.class).produto(novo.getId())).withSelfRel())
                 .add(linkTo(methodOn(ProdutoResource.class).produto(novo.getId())).withRel("Busca pelo ID"))
-                .add(linkTo(methodOn(ProdutoResource.class).produtos(pageable)).withRel("todos os produtos"))
+                // 4. Atualizado para 3 parâmetros
+                .add(linkTo(methodOn(ProdutoResource.class).produtos(null, null, pageable)).withRel("todos os produtos"))
                 .add(linkTo(methodOn(ProdutoResource.class).update(novo.getId(), dto)).withRel("atualizar o produto"))
                 .add(linkTo(methodOn(ProdutoResource.class).delete(novo.getId())).withRel("apagar o produto"));
     }
 
     @Transactional
-    public void  delete(Long id){
+    public void delete(Long id){
         if(!produtoRepository.existsById(id)){
             throw new RegistroNaoEncontrado("Produto não encontrado ao tentar ser excluído");
         }
 
         try{
             produtoRepository.deleteById(id);
-        }catch (DataIntegrityViolationException e){
+        } catch (DataIntegrityViolationException e){
             throw new ErroNoBancoDeDados(e.getMessage());
         }
-
     }
 
+    @Transactional
     public ProdutoDTO update(Long id, ProdutoDTO dto) {
 
         if(!produtoRepository.existsById(id)){
-            throw new RegistroNaoEncontrado("Produto não encontrado para ser alterada");
+            throw new RegistroNaoEncontrado("Produto não encontrado para ser alterado");
         }
 
         Produto entity = produtoRepository.getReferenceById(id);
 
         copyDtoToEntity(dto, entity);
 
-        Pageable pageable= PageRequest.of(0,10, Sort.by("id"));
+        Pageable pageable = PageRequest.of(0, 10, Sort.by("id"));
 
         entity = produtoRepository.save(entity);
         return new ProdutoDTO(entity)
-                .add(linkTo(methodOn(ProdutoResource.class).update(id, dto)).withSelfRel())
-                .add(linkTo(methodOn(ProdutoResource.class).produto(id)).withRel("Busca pelo ID"))
-                .add(linkTo(methodOn(ProdutoResource.class).produtos(pageable)).withRel("todos os produtos"))
+                .add(linkTo(methodOn(ProdutoResource.class).produto(entity.getId())).withSelfRel())
+                .add(linkTo(methodOn(ProdutoResource.class).produto(entity.getId())).withRel("Busca pelo ID"))
+                // 4. Atualizado para 3 parâmetros
+                .add(linkTo(methodOn(ProdutoResource.class).produtos(null, null, pageable)).withRel("todos os produtos"))
                 .add(linkTo(methodOn(ProdutoResource.class).delete(id)).withRel("apagar o produto"));
     }
 
+    // Seu método auxiliar excelente para evitar repetição de código
     private void copyDtoToEntity(ProdutoDTO dto, Produto entity) {
         entity.setNome(dto.getNome());
         entity.setDescricao(dto.getDescription());
@@ -170,7 +165,7 @@ public class ProdutoService {
         entity.setImgUrl(dto.getImgURL());
 
         entity.getCategorias().clear();
-        for(CategoriaDTO catDto: dto.getCategorias()){
+        for(CategoriaDTO catDto : dto.getCategorias()){
             Categoria cat = categoriaRepository.getReferenceById(catDto.getId());
             entity.getCategorias().add(cat);
         }

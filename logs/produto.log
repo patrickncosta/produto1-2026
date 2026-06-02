@@ -1,80 +1,32 @@
-2026-05-26 10:14:21.171 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-26 10:14:21.257 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 45044 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-05-26 10:14:21.259 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "prod"
-2026-05-26 10:14:24.119 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-26 10:14:24.122 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-26 10:14:24.123 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-26 10:14:24.245 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-26 10:14:24.553 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-26 10:14:24.910 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2026-05-26 10:14:24.912 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-26 10:14:24.979 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-26 10:14:25.095 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
-2026-05-26 10:14:25.195 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-05-26 10:14:25.879 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-05-26 10:14:28.194 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-26 10:14:32.307 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-26 10:14:32.388 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 12.133 seconds (process running for 20.534)
-2026-05-26 10:14:32.580 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-05-26 10:14:32.581 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-05-26 10:24:08.548 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-26 10:24:08.551 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-05-26 10:24:11.951 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-26 10:24:12.002 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 13512 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-05-26 10:24:12.004 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
-2026-05-26 10:24:14.348 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-26 10:24:14.350 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-26 10:24:14.350 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-26 10:24:14.433 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-26 10:24:14.687 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-26 10:24:14.935 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2026-05-26 10:24:14.937 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-26 10:24:14.993 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-26 10:24:15.063 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
-2026-05-26 10:24:15.110 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2026-05-26 10:24:15.562 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-05-26 10:24:16.918 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-26 10:24:20.039 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-05-26 10:24:20.077 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 8.811 seconds (process running for 9.622)
-2026-05-26 10:24:20.206 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
-2026-05-26 10:24:20.207 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
-2026-05-26 10:41:52.451 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-26 10:41:52.455 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-05-26 10:53:09.663 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-26 10:53:09.727 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 9044 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-05-26 10:53:09.728 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
-2026-05-26 10:53:12.436 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-26 10:53:12.440 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-26 10:53:12.440 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-26 10:53:12.525 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-26 10:53:13.015 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-26 10:53:14.311 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
+2026-06-02 10:57:28.740 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-06-02 10:57:28.808 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 37720 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
+2026-06-02 10:57:28.809 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
+2026-06-02 10:57:31.371 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-02 10:57:31.373 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-02 10:57:31.374 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-06-02 10:57:31.447 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-02 10:57:31.984 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 10:57:33.117 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Communications link failure
 
-2026-05-26 10:53:14.317 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-05-26 10:53:14.377 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08S01
+Error Code : 0
+Message    : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+2026-06-02 10:57:33.123 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-06-02 10:57:33.197 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08S01
+Error Code : 0
+Message    : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
@@ -87,11 +39,15 @@ Message    : Access denied for user 'root'@'localhost' (using password: YES)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
 	at br.ifmg.produto1_2026.Produto12026Application.main(Produto12026Application.java:16)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08S01
+Error Code : 0
+Message    : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
@@ -102,11 +58,15 @@ Message    : Access denied for user 'root'@'localhost' (using password: YES)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
 	... 10 common frames omitted
-Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08S01
+Error Code : 0
+Message    : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 
 	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
 	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
@@ -116,9 +76,11 @@ Message    : Access denied for user 'root'@'localhost' (using password: YES)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
 	... 17 common frames omitted
-Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:840)
 	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416)
 	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
@@ -132,28 +94,56 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
 	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:59)
 	... 23 common frames omitted
-2026-05-26 10:55:33.648 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-26 10:55:33.707 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 27340 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-05-26 10:55:33.709 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
-2026-05-26 10:55:36.285 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-26 10:55:36.294 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-26 10:55:36.296 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-26 10:55:36.378 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-26 10:55:36.847 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-26 10:55:38.079 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
 
-2026-05-26 10:55:38.087 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-05-26 10:55:38.145 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:964)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	... 34 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:639)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:543)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:284)
+	at java.base/java.net.Socket.connect(Socket.java:659)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 37 common frames omitted
+2026-06-02 10:58:57.237 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-06-02 10:58:57.301 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 21956 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
+2026-06-02 10:58:57.303 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
+2026-06-02 10:58:59.273 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-02 10:58:59.275 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-02 10:58:59.275 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-06-02 10:58:59.360 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-02 10:58:59.758 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 10:58:59.970 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48277712
+2026-06-02 10:58:59.972 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-02 10:58:59.988 [main] INFO  >>> o.f.c.i.r.ResourceNameValidator - 2 SQL migrations were detected but not run because they did not follow the filename convention.
+2026-06-02 10:58:59.989 [main] INFO  >>> o.f.c.i.r.ResourceNameValidator - Set 'validateMigrationNaming' to true to fail fast and see a list of the invalid file names.
+2026-06-02 10:59:00.118 [main] INFO  >>> org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/products?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC (MySQL 5.5)
+2026-06-02 10:59:00.214 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Detected failed migration to version 2 (criando tabelas do bd).
+Please remove any half-completed changes then run repair to fix the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+2026-06-02 10:59:00.214 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-02 10:59:00.229 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-02 10:59:00.234 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-06-02 10:59:00.272 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Detected failed migration to version 2 (criando tabelas do bd).
+Please remove any half-completed changes then run repair to fix the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974)
@@ -165,12 +155,10 @@ Message    : Access denied for user 'root'@'localhost' (using password: YES)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
 	at br.ifmg.produto1_2026.Produto12026Application.main(Produto12026Application.java:16)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+Detected failed migration to version 2 (criando tabelas do bd).
+Please remove any half-completed changes then run repair to fix the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
@@ -180,448 +168,41 @@ Message    : Access denied for user 'root'@'localhost' (using password: YES)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
 	... 10 common frames omitted
-Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
-	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
-	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:136)
+Caused by: org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
+Detected failed migration to version 2 (criando tabelas do bd).
+Please remove any half-completed changes then run repair to fix the schema history.
+Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+	at org.flywaydb.core.Flyway.lambda$migrate$1(Flyway.java:201)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:210)
 	at org.flywaydb.core.Flyway.migrate(Flyway.java:188)
 	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
 	... 17 common frames omitted
-Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:840)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
-	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:59)
-	... 23 common frames omitted
-2026-05-26 10:58:32.584 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-26 10:58:32.665 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 13764 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-05-26 10:58:32.667 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
-2026-05-26 10:58:35.156 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-26 10:58:35.158 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-26 10:58:35.159 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-26 10:58:35.247 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-26 10:58:35.716 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-26 10:58:36.948 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-2026-05-26 10:58:36.953 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-05-26 10:58:36.997 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at br.ifmg.produto1_2026.Produto12026Application.main(Produto12026Application.java:16)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
-	... 10 common frames omitted
-Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
-	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
-	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:136)
-	at org.flywaydb.core.Flyway.migrate(Flyway.java:188)
-	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
-	... 17 common frames omitted
-Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:840)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
-	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:59)
-	... 23 common frames omitted
-2026-05-26 10:59:38.146 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-26 10:59:38.227 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 25040 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-05-26 10:59:38.230 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
-2026-05-26 10:59:41.872 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-26 10:59:41.875 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-26 10:59:41.876 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-26 10:59:41.999 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-26 10:59:42.638 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-26 10:59:43.889 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-2026-05-26 10:59:43.897 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-05-26 10:59:43.976 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at br.ifmg.produto1_2026.Produto12026Application.main(Produto12026Application.java:16)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
-	... 10 common frames omitted
-Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
-	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
-	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:136)
-	at org.flywaydb.core.Flyway.migrate(Flyway.java:188)
-	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
-	... 17 common frames omitted
-Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:840)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
-	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:59)
-	... 23 common frames omitted
-2026-05-26 11:04:01.991 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-26 11:04:02.070 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 31908 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-05-26 11:04:02.071 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
-2026-05-26 11:04:04.905 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-26 11:04:04.911 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-26 11:04:04.912 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-26 11:04:05.000 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-26 11:04:05.461 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-26 11:04:06.680 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-2026-05-26 11:04:06.689 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-05-26 11:04:06.745 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at br.ifmg.produto1_2026.Produto12026Application.main(Produto12026Application.java:16)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
-	... 10 common frames omitted
-Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
-	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
-	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:136)
-	at org.flywaydb.core.Flyway.migrate(Flyway.java:188)
-	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
-	... 17 common frames omitted
-Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:840)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
-	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:59)
-	... 23 common frames omitted
-2026-05-26 11:16:47.622 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-26 11:16:47.674 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 9236 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-05-26 11:16:47.675 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
-2026-05-26 11:16:50.253 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-26 11:16:50.261 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-26 11:16:50.262 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-26 11:16:50.346 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-26 11:16:50.879 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-26 11:16:52.135 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-2026-05-26 11:16:52.141 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-05-26 11:16:52.186 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at br.ifmg.produto1_2026.Produto12026Application.main(Produto12026Application.java:16)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
-	... 10 common frames omitted
-Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
-	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
-	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:136)
-	at org.flywaydb.core.Flyway.migrate(Flyway.java:188)
-	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
-	... 17 common frames omitted
-Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:840)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
-	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:59)
-	... 23 common frames omitted
-2026-05-26 11:17:53.146 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-26 11:17:53.229 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 41916 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-05-26 11:17:53.230 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
-2026-05-26 11:17:56.371 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-26 11:17:56.375 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-26 11:17:56.376 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-26 11:17:56.460 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-26 11:17:56.901 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-26 11:17:58.143 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-2026-05-26 11:17:58.151 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-05-26 11:17:58.200 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at br.ifmg.produto1_2026.Produto12026Application.main(Produto12026Application.java:16)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
-	... 10 common frames omitted
-Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Access denied for user 'root'@'localhost' (using password: YES)
-----------------------------------------------------------------------------------------------------------
-SQL State  : 28000
-Error Code : 1045
-Message    : Access denied for user 'root'@'localhost' (using password: YES)
-
-	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
-	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
-	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:136)
-	at org.flywaydb.core.Flyway.migrate(Flyway.java:188)
-	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
-	... 17 common frames omitted
-Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:840)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
-	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:59)
-	... 23 common frames omitted
-2026-05-26 11:20:24.499 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-26 11:20:24.577 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 14564 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-05-26 11:20:24.579 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
-2026-05-26 11:20:27.419 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-26 11:20:27.423 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-26 11:20:27.423 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-26 11:20:27.556 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-26 11:20:28.066 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-26 11:20:28.333 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c18ee69
-2026-05-26 11:20:28.335 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-26 11:20:28.506 [main] INFO  >>> org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/products?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC (MySQL 5.5)
-2026-05-26 11:20:28.612 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `products`.`flyway_schema_history` does not exist yet
-2026-05-26 11:20:28.622 [main] INFO  >>> o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.051s)
-2026-05-26 11:20:28.740 [main] INFO  >>> org.flywaydb.core.Flyway - All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
-2026-05-26 11:20:28.749 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `products`.`flyway_schema_history` ...
-2026-05-26 11:20:28.971 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Current version of schema `products`: << Empty Schema >>
-2026-05-26 11:20:28.972 [main] WARN  >>> o.f.core.internal.command.DbMigrate - outOfOrder mode is active. Migration of schema `products` may not be reproducible.
-2026-05-26 11:20:29.002 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "1 - criacao do bd"
-2026-05-26 11:20:29.015 [main] WARN  >>> o.f.c.i.s.DefaultSqlScriptExecutor - DB: Can't create database 'products'; database exists (SQL State: HY000 - Error Code: 1007)
-2026-05-26 11:20:29.091 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "2 - criando tabelas do bd"
-2026-05-26 11:20:29.109 [main] ERROR >>> o.f.core.internal.command.DbMigrate - Migration of schema `products` to version "2 - criando tabelas do bd" failed! Please restore backups and roll back database and code!
-2026-05-26 11:20:29.138 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V2__criando_tabelas_do_bd.sql failed
+2026-06-02 11:12:45.387 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-06-02 11:12:45.443 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 34428 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
+2026-06-02 11:12:45.444 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
+2026-06-02 11:12:48.617 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-02 11:12:48.625 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-02 11:12:48.627 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-06-02 11:12:48.858 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-02 11:12:49.834 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 11:12:50.350 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@dd20ebc
+2026-06-02 11:12:50.358 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-02 11:12:50.397 [main] INFO  >>> o.f.c.i.r.ResourceNameValidator - 2 SQL migrations were detected but not run because they did not follow the filename convention.
+2026-06-02 11:12:50.397 [main] INFO  >>> o.f.c.i.r.ResourceNameValidator - Set 'validateMigrationNaming' to true to fail fast and see a list of the invalid file names.
+2026-06-02 11:12:50.536 [main] INFO  >>> org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/products?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC (MySQL 5.5)
+2026-06-02 11:12:50.676 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `products`.`flyway_schema_history` does not exist yet
+2026-06-02 11:12:50.689 [main] INFO  >>> o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.090s)
+2026-06-02 11:12:50.801 [main] INFO  >>> org.flywaydb.core.Flyway - All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2026-06-02 11:12:50.801 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `products`.`flyway_schema_history` ...
+2026-06-02 11:12:50.944 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Current version of schema `products`: << Empty Schema >>
+2026-06-02 11:12:50.956 [main] WARN  >>> o.f.core.internal.command.DbMigrate - outOfOrder mode is active. Migration of schema `products` may not be reproducible.
+2026-06-02 11:12:50.974 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "1 - criacao do bd"
+2026-06-02 11:12:50.996 [main] WARN  >>> o.f.c.i.s.DefaultSqlScriptExecutor - DB: Can't create database 'products'; database exists (SQL State: HY000 - Error Code: 1007)
+2026-06-02 11:12:51.085 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "2 - criando tabelas do bd"
+2026-06-02 11:12:51.102 [main] ERROR >>> o.f.core.internal.command.DbMigrate - Migration of schema `products` to version "2 - criando tabelas do bd" failed! Please restore backups and roll back database and code!
+2026-06-02 11:12:51.149 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V2__criando_tabelas_do_bd.sql failed
 -------------------------------------------
 SQL State  : 42000
 Error Code : 1064
@@ -630,10 +211,10 @@ Location   : db/migration/V2__criando_tabelas_do_bd.sql (C:\Users\Petricks\Docum
 Line       : 1
 Statement  : Run Flyway with -X option to see the actual statement causing the problem
 
-2026-05-26 11:20:29.138 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-26 11:20:29.149 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-05-26 11:20:29.153 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-05-26 11:20:29.204 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
+2026-06-02 11:12:51.149 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-02 11:12:51.176 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-02 11:12:51.185 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-06-02 11:12:51.277 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V2__criando_tabelas_do_bd.sql failed
 -------------------------------------------
 SQL State  : 42000
@@ -728,25 +309,25 @@ Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL synta
 	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:88)
 	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:212)
 	... 39 common frames omitted
-2026-05-26 11:25:59.672 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-26 11:25:59.757 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 28420 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-05-26 11:25:59.758 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
-2026-05-26 11:26:02.518 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-26 11:26:02.520 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-26 11:26:02.521 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-26 11:26:02.633 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-26 11:26:03.132 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-26 11:26:03.402 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c18ee69
-2026-05-26 11:26:03.405 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-26 11:26:03.550 [main] INFO  >>> org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/products?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC (MySQL 5.5)
-2026-05-26 11:26:03.678 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
+2026-06-02 11:16:03.465 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-06-02 11:16:03.515 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 43736 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
+2026-06-02 11:16:03.517 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
+2026-06-02 11:16:06.718 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-02 11:16:06.720 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-02 11:16:06.720 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-06-02 11:16:06.936 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-02 11:16:07.921 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 11:16:08.426 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48d44b46
+2026-06-02 11:16:08.431 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-02 11:16:08.686 [main] INFO  >>> org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/products?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC (MySQL 5.5)
+2026-06-02 11:16:08.867 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
 Detected failed migration to version 2 (criando tabelas do bd).
 Please remove any half-completed changes then run repair to fix the schema history.
 Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
-2026-05-26 11:26:03.679 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-26 11:26:03.712 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-05-26 11:26:03.718 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-05-26 11:26:03.761 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
+2026-06-02 11:16:08.867 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-02 11:16:09.191 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-02 11:16:09.277 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-06-02 11:16:09.483 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
 Detected failed migration to version 2 (criando tabelas do bd).
 Please remove any half-completed changes then run repair to fix the schema history.
@@ -786,29 +367,167 @@ Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
 	... 17 common frames omitted
-2026-05-26 11:33:06.241 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-26 11:33:06.345 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 21748 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-05-26 11:33:06.347 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
-2026-05-26 11:33:09.017 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-26 11:33:09.020 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-26 11:33:09.020 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-26 11:33:09.108 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-26 11:33:09.676 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-26 11:33:09.939 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@318e3942
-2026-05-26 11:33:09.941 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-26 11:33:10.107 [main] INFO  >>> org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/products?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC (MySQL 5.5)
-2026-05-26 11:33:10.219 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
-Detected failed migration to version 2 (criando tabelas do bd).
-Please remove any half-completed changes then run repair to fix the schema history.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
-2026-05-26 11:33:10.220 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-26 11:33:10.244 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-05-26 11:33:10.252 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-05-26 11:33:10.312 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
-Detected failed migration to version 2 (criando tabelas do bd).
-Please remove any half-completed changes then run repair to fix the schema history.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+2026-06-02 11:16:34.978 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-06-02 11:16:35.038 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 26828 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
+2026-06-02 11:16:35.039 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
+2026-06-02 11:16:37.067 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-02 11:16:37.069 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-02 11:16:37.070 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-06-02 11:16:37.142 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-02 11:16:37.521 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 11:16:37.723 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@dd20ebc
+2026-06-02 11:16:37.724 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-02 11:16:37.840 [main] INFO  >>> org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/products?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC (MySQL 5.5)
+2026-06-02 11:16:37.900 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `products`.`flyway_schema_history` does not exist yet
+2026-06-02 11:16:37.905 [main] INFO  >>> o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.030s)
+2026-06-02 11:16:38.004 [main] INFO  >>> org.flywaydb.core.Flyway - All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2026-06-02 11:16:38.012 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `products`.`flyway_schema_history` ...
+2026-06-02 11:16:38.115 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Current version of schema `products`: << Empty Schema >>
+2026-06-02 11:16:38.115 [main] WARN  >>> o.f.core.internal.command.DbMigrate - outOfOrder mode is active. Migration of schema `products` may not be reproducible.
+2026-06-02 11:16:38.128 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "1 - criacao do bd"
+2026-06-02 11:16:38.135 [main] WARN  >>> o.f.c.i.s.DefaultSqlScriptExecutor - DB: Can't create database 'products'; database exists (SQL State: HY000 - Error Code: 1007)
+2026-06-02 11:16:38.193 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "2 - criando tabelas do bd"
+2026-06-02 11:16:38.716 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "3 - inserindo usuarios"
+2026-06-02 11:16:38.730 [main] ERROR >>> o.f.core.internal.command.DbMigrate - Migration of schema `products` to version "3 - inserindo usuarios" failed! Please restore backups and roll back database and code!
+2026-06-02 11:16:42.008 [main] WARN  >>> c.zaxxer.hikari.pool.ProxyConnection - HikariPool-1 - Connection com.mysql.cj.jdbc.ConnectionImpl@dd20ebc marked as broken because of SQLSTATE(08S01), ErrorCode(0)
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3.264 milliseconds ago. The last packet sent successfully to the server was 3.264 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.execute(JdbcTemplate.java:195)
+	at org.flywaydb.database.mysql.MySQLTable.doLock(MySQLTable.java:51)
+	at org.flywaydb.core.internal.database.base.Table.lock(Table.java:101)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.doAddAppliedMigration(JdbcTableSchemaHistory.java:178)
+	at org.flywaydb.core.internal.schemahistory.SchemaHistory.addAppliedMigration(SchemaHistory.java:204)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:302)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:255)
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:153)
+	at org.flywaydb.database.mysql.MySQLNamedLockTemplate.execute(MySQLNamedLockTemplate.java:58)
+	at org.flywaydb.database.mysql.MySQLConnection.lock(MySQLConnection.java:150)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:164)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:153)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:104)
+	at org.flywaydb.core.Flyway.lambda$migrate$1(Flyway.java:247)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:210)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:188)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at br.ifmg.produto1_2026.Produto12026Application.main(Produto12026Application.java:16)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3.264 milliseconds ago. The last packet sent successfully to the server was 3.264 milliseconds ago.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:590)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:767)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:706)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:938)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:817)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:963)
+	... 39 common frames omitted
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:316)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:354)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:798)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:974)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:964)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:91)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:130)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:157)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:55)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:72)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:54)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:36)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:43)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:32)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:45)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:35)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:584)
+	... 44 common frames omitted
+2026-06-02 11:16:42.013 [main] ERROR >>> o.f.d.mysql.MySQLNamedLockTemplate - Unable to release MySQL named lock: Flyway-286091797
+java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:562)
+	at jdk.proxy3/jdk.proxy3.$Proxy99.prepareStatement(Unknown Source)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:328)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.prepareStatement(JdbcTemplate.java:318)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.execute(JdbcTemplate.java:194)
+	at org.flywaydb.database.mysql.MySQLNamedLockTemplate.execute(MySQLNamedLockTemplate.java:71)
+	at org.flywaydb.database.mysql.MySQLConnection.lock(MySQLConnection.java:150)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:164)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:153)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:104)
+	at org.flywaydb.core.Flyway.lambda$migrate$1(Flyway.java:247)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:210)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:188)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at br.ifmg.produto1_2026.Produto12026Application.main(Produto12026Application.java:16)
+2026-06-02 11:16:42.016 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to lock table `products`.`flyway_schema_history`
+-------------------------------------------------------
+SQL State  : 08S01
+Error Code : 0
+Message    : Communications link failure
+
+The last packet successfully received from the server was 3.264 milliseconds ago. The last packet sent successfully to the server was 3.264 milliseconds ago.
+
+2026-06-02 11:16:42.017 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-02 11:16:42.049 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-02 11:16:42.054 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-06-02 11:16:42.093 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to lock table `products`.`flyway_schema_history`
+-------------------------------------------------------
+SQL State  : 08S01
+Error Code : 0
+Message    : Communications link failure
+
+The last packet successfully received from the server was 3.264 milliseconds ago. The last packet sent successfully to the server was 3.264 milliseconds ago.
+
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974)
@@ -820,10 +539,14 @@ Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
 	at br.ifmg.produto1_2026.Produto12026Application.main(Produto12026Application.java:16)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
-Detected failed migration to version 2 (criando tabelas do bd).
-Please remove any half-completed changes then run repair to fix the schema history.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to lock table `products`.`flyway_schema_history`
+-------------------------------------------------------
+SQL State  : 08S01
+Error Code : 0
+Message    : Communications link failure
+
+The last packet successfully received from the server was 3.264 milliseconds ago. The last packet sent successfully to the server was 3.264 milliseconds ago.
+
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
@@ -833,57 +556,123 @@ Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
 	... 10 common frames omitted
-Caused by: org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
-Detected failed migration to version 2 (criando tabelas do bd).
-Please remove any half-completed changes then run repair to fix the schema history.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
-	at org.flywaydb.core.Flyway.lambda$migrate$1(Flyway.java:201)
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to lock table `products`.`flyway_schema_history`
+-------------------------------------------------------
+SQL State  : 08S01
+Error Code : 0
+Message    : Communications link failure
+
+The last packet successfully received from the server was 3.264 milliseconds ago. The last packet sent successfully to the server was 3.264 milliseconds ago.
+
+	at org.flywaydb.core.internal.database.base.Table.lock(Table.java:104)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.doAddAppliedMigration(JdbcTableSchemaHistory.java:178)
+	at org.flywaydb.core.internal.schemahistory.SchemaHistory.addAppliedMigration(SchemaHistory.java:204)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:302)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:255)
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:153)
+	at org.flywaydb.database.mysql.MySQLNamedLockTemplate.execute(MySQLNamedLockTemplate.java:58)
+	at org.flywaydb.database.mysql.MySQLConnection.lock(MySQLConnection.java:150)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:164)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:153)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:104)
+	at org.flywaydb.core.Flyway.lambda$migrate$1(Flyway.java:247)
 	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:210)
 	at org.flywaydb.core.Flyway.migrate(Flyway.java:188)
 	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
 	... 17 common frames omitted
-2026-05-26 11:33:52.154 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-26 11:33:52.220 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 35400 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-05-26 11:33:52.222 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
-2026-05-26 11:33:55.623 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-26 11:33:55.623 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-26 11:33:55.623 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-26 11:33:55.846 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-26 11:33:56.895 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-26 11:33:57.441 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72a3462f
-2026-05-26 11:33:57.450 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-26 11:33:57.761 [main] INFO  >>> org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/products?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC (MySQL 5.5)
-2026-05-26 11:33:57.892 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `products`.`flyway_schema_history` does not exist yet
-2026-05-26 11:33:57.898 [main] INFO  >>> o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.066s)
-2026-05-26 11:33:58.082 [main] INFO  >>> org.flywaydb.core.Flyway - All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
-2026-05-26 11:33:58.091 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `products`.`flyway_schema_history` ...
-2026-05-26 11:33:58.241 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Current version of schema `products`: << Empty Schema >>
-2026-05-26 11:33:58.241 [main] WARN  >>> o.f.core.internal.command.DbMigrate - outOfOrder mode is active. Migration of schema `products` may not be reproducible.
-2026-05-26 11:33:58.264 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "1 - criacao do bd"
-2026-05-26 11:33:58.299 [main] WARN  >>> o.f.c.i.s.DefaultSqlScriptExecutor - DB: Can't create database 'products'; database exists (SQL State: HY000 - Error Code: 1007)
-2026-05-26 11:33:58.414 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "2 - criando tabelas do bd"
-2026-05-26 11:33:58.430 [main] ERROR >>> o.f.core.internal.command.DbMigrate - Migration of schema `products` to version "2 - criando tabelas do bd" failed! Please restore backups and roll back database and code!
-2026-05-26 11:33:58.478 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V2__criando_tabelas_do_bd.sql failed
--------------------------------------------
-SQL State  : 42000
-Error Code : 1064
-Message    : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'TIME ZONE, criado_em TIMESTAMP WITHOUT TIME ZONE, id bigint generated by defa...' at line 1
-Location   : db/migration/V2__criando_tabelas_do_bd.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V2__criando_tabelas_do_bd.sql)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3.264 milliseconds ago. The last packet sent successfully to the server was 3.264 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.execute(JdbcTemplate.java:195)
+	at org.flywaydb.database.mysql.MySQLTable.doLock(MySQLTable.java:51)
+	at org.flywaydb.core.internal.database.base.Table.lock(Table.java:101)
+	... 33 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3.264 milliseconds ago. The last packet sent successfully to the server was 3.264 milliseconds ago.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:590)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:767)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:706)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:938)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:817)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:963)
+	... 39 common frames omitted
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:316)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:354)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:798)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:974)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:964)
+	at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:91)
+	at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:130)
+	at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:157)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:55)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:72)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:54)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:36)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:43)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:32)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:45)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:35)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:584)
+	... 44 common frames omitted
+2026-06-02 11:22:22.352 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-06-02 11:22:22.409 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 14340 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
+2026-06-02 11:22:22.410 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
+2026-06-02 11:22:24.324 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-02 11:22:24.326 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-02 11:22:24.327 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-06-02 11:22:24.394 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-02 11:22:24.773 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 11:22:24.996 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@311a0b3e
+2026-06-02 11:22:24.998 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-02 11:22:25.102 [main] INFO  >>> org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/products?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC (MySQL 5.5)
+2026-06-02 11:22:25.168 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `products`.`flyway_schema_history` does not exist yet
+2026-06-02 11:22:25.173 [main] INFO  >>> o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.036s)
+2026-06-02 11:22:25.284 [main] INFO  >>> org.flywaydb.core.Flyway - All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2026-06-02 11:22:25.293 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `products`.`flyway_schema_history` ...
+2026-06-02 11:22:25.383 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Current version of schema `products`: << Empty Schema >>
+2026-06-02 11:22:25.383 [main] WARN  >>> o.f.core.internal.command.DbMigrate - outOfOrder mode is active. Migration of schema `products` may not be reproducible.
+2026-06-02 11:22:25.394 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "1 - criacao do bd"
+2026-06-02 11:22:25.400 [main] WARN  >>> o.f.c.i.s.DefaultSqlScriptExecutor - DB: Can't create database 'products'; database exists (SQL State: HY000 - Error Code: 1007)
+2026-06-02 11:22:25.443 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "2 - criando tabelas do bd"
+2026-06-02 11:22:25.977 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "3 - inserindo usuarios"
+2026-06-02 11:22:25.990 [main] ERROR >>> o.f.core.internal.command.DbMigrate - Migration of schema `products` to version "3 - inserindo usuarios" failed! Please restore backups and roll back database and code!
+2026-06-02 11:22:26.015 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V3__inserindo_usuarios.sql failed
+----------------------------------------
+SQL State  : 42S02
+Error Code : 1146
+Message    : Table 'products.tb_perfil' doesn't exist
+Location   : db/migration/V3__inserindo_usuarios.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V3__inserindo_usuarios.sql)
 Line       : 1
 Statement  : Run Flyway with -X option to see the actual statement causing the problem
 
-2026-05-26 11:33:58.478 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-26 11:33:58.510 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-05-26 11:33:58.510 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-05-26 11:33:58.622 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V2__criando_tabelas_do_bd.sql failed
--------------------------------------------
-SQL State  : 42000
-Error Code : 1064
-Message    : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'TIME ZONE, criado_em TIMESTAMP WITHOUT TIME ZONE, id bigint generated by defa...' at line 1
-Location   : db/migration/V2__criando_tabelas_do_bd.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V2__criando_tabelas_do_bd.sql)
+2026-06-02 11:22:26.016 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-02 11:22:26.026 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-02 11:22:26.031 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-06-02 11:22:26.070 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V3__inserindo_usuarios.sql failed
+----------------------------------------
+SQL State  : 42S02
+Error Code : 1146
+Message    : Table 'products.tb_perfil' doesn't exist
+Location   : db/migration/V3__inserindo_usuarios.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V3__inserindo_usuarios.sql)
 Line       : 1
 Statement  : Run Flyway with -X option to see the actual statement causing the problem
 
@@ -898,12 +687,12 @@ Statement  : Run Flyway with -X option to see the actual statement causing the p
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
 	at br.ifmg.produto1_2026.Produto12026Application.main(Produto12026Application.java:16)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V2__criando_tabelas_do_bd.sql failed
--------------------------------------------
-SQL State  : 42000
-Error Code : 1064
-Message    : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'TIME ZONE, criado_em TIMESTAMP WITHOUT TIME ZONE, id bigint generated by defa...' at line 1
-Location   : db/migration/V2__criando_tabelas_do_bd.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V2__criando_tabelas_do_bd.sql)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V3__inserindo_usuarios.sql failed
+----------------------------------------
+SQL State  : 42S02
+Error Code : 1146
+Message    : Table 'products.tb_perfil' doesn't exist
+Location   : db/migration/V3__inserindo_usuarios.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V3__inserindo_usuarios.sql)
 Line       : 1
 Statement  : Run Flyway with -X option to see the actual statement causing the problem
 
@@ -916,12 +705,12 @@ Statement  : Run Flyway with -X option to see the actual statement causing the p
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
 	... 10 common frames omitted
-Caused by: org.flywaydb.core.internal.exception.FlywayMigrateException: Script V2__criando_tabelas_do_bd.sql failed
--------------------------------------------
-SQL State  : 42000
-Error Code : 1064
-Message    : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'TIME ZONE, criado_em TIMESTAMP WITHOUT TIME ZONE, id bigint generated by defa...' at line 1
-Location   : db/migration/V2__criando_tabelas_do_bd.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V2__criando_tabelas_do_bd.sql)
+Caused by: org.flywaydb.core.internal.exception.FlywayMigrateException: Script V3__inserindo_usuarios.sql failed
+----------------------------------------
+SQL State  : 42S02
+Error Code : 1146
+Message    : Table 'products.tb_perfil' doesn't exist
+Location   : db/migration/V3__inserindo_usuarios.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V3__inserindo_usuarios.sql)
 Line       : 1
 Statement  : Run Flyway with -X option to see the actual statement causing the problem
 
@@ -943,12 +732,12 @@ Statement  : Run Flyway with -X option to see the actual statement causing the p
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
 	... 17 common frames omitted
-Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Script V2__criando_tabelas_do_bd.sql failed
--------------------------------------------
-SQL State  : 42000
-Error Code : 1064
-Message    : You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'TIME ZONE, criado_em TIMESTAMP WITHOUT TIME ZONE, id bigint generated by defa...' at line 1
-Location   : db/migration/V2__criando_tabelas_do_bd.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V2__criando_tabelas_do_bd.sql)
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Script V3__inserindo_usuarios.sql failed
+----------------------------------------
+SQL State  : 42S02
+Error Code : 1146
+Message    : Table 'products.tb_perfil' doesn't exist
+Location   : db/migration/V3__inserindo_usuarios.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V3__inserindo_usuarios.sql)
 Line       : 1
 Statement  : Run Flyway with -X option to see the actual statement causing the problem
 
@@ -961,7 +750,7 @@ Statement  : Run Flyway with -X option to see the actual statement causing the p
 	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:65)
 	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:391)
 	... 33 common frames omitted
-Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'TIME ZONE, criado_em TIMESTAMP WITHOUT TIME ZONE, id bigint generated by defa...' at line 1
+Caused by: java.sql.SQLSyntaxErrorException: Table 'products.tb_perfil' doesn't exist
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
 	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
@@ -972,29 +761,50 @@ Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL synta
 	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:88)
 	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:212)
 	... 39 common frames omitted
-2026-05-26 11:35:22.505 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-05-26 11:35:22.607 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 26684 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
-2026-05-26 11:35:22.609 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
-2026-05-26 11:35:25.321 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-05-26 11:35:25.324 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-05-26 11:35:25.325 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
-2026-05-26 11:35:25.413 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2026-05-26 11:35:25.920 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-05-26 11:35:26.234 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@318e3942
-2026-05-26 11:35:26.239 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-05-26 11:35:26.382 [main] INFO  >>> org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/products?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC (MySQL 5.5)
-2026-05-26 11:35:26.495 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
-Detected failed migration to version 2 (criando tabelas do bd).
-Please remove any half-completed changes then run repair to fix the schema history.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
-2026-05-26 11:35:26.496 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-05-26 11:35:26.540 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-05-26 11:35:26.547 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2026-05-26 11:35:26.604 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
-Detected failed migration to version 2 (criando tabelas do bd).
-Please remove any half-completed changes then run repair to fix the schema history.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+2026-06-02 11:25:18.688 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-06-02 11:25:18.749 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 10380 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
+2026-06-02 11:25:18.750 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
+2026-06-02 11:25:20.718 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-02 11:25:20.720 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-02 11:25:20.720 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-06-02 11:25:20.785 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-02 11:25:21.179 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 11:25:21.376 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@dd20ebc
+2026-06-02 11:25:21.378 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-02 11:25:21.503 [main] INFO  >>> org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/products?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC (MySQL 5.5)
+2026-06-02 11:25:21.574 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `products`.`flyway_schema_history` does not exist yet
+2026-06-02 11:25:21.578 [main] INFO  >>> o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.032s)
+2026-06-02 11:25:21.681 [main] INFO  >>> org.flywaydb.core.Flyway - All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2026-06-02 11:25:21.689 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `products`.`flyway_schema_history` ...
+2026-06-02 11:25:21.772 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Current version of schema `products`: << Empty Schema >>
+2026-06-02 11:25:21.772 [main] WARN  >>> o.f.core.internal.command.DbMigrate - outOfOrder mode is active. Migration of schema `products` may not be reproducible.
+2026-06-02 11:25:21.781 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "1 - criacao do bd"
+2026-06-02 11:25:21.786 [main] WARN  >>> o.f.c.i.s.DefaultSqlScriptExecutor - DB: Can't create database 'products'; database exists (SQL State: HY000 - Error Code: 1007)
+2026-06-02 11:25:21.828 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "2 - criando tabelas do bd"
+2026-06-02 11:25:22.371 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "3 - inserindo usuarios"
+2026-06-02 11:25:22.404 [main] ERROR >>> o.f.core.internal.command.DbMigrate - Migration of schema `products` to version "3 - inserindo usuarios" failed! Please restore backups and roll back database and code!
+2026-06-02 11:25:22.428 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V3__inserindo_usuarios.sql failed
+----------------------------------------
+SQL State  : 42S02
+Error Code : 1146
+Message    : Table 'products.tb_usuario_perfil' doesn't exist
+Location   : db/migration/V3__inserindo_usuarios.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V3__inserindo_usuarios.sql)
+Line       : 9
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+2026-06-02 11:25:22.428 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-02 11:25:22.440 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-02 11:25:22.447 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-06-02 11:25:22.502 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V3__inserindo_usuarios.sql failed
+----------------------------------------
+SQL State  : 42S02
+Error Code : 1146
+Message    : Table 'products.tb_usuario_perfil' doesn't exist
+Location   : db/migration/V3__inserindo_usuarios.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V3__inserindo_usuarios.sql)
+Line       : 9
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974)
@@ -1006,10 +816,15 @@ Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
 	at br.ifmg.produto1_2026.Produto12026Application.main(Produto12026Application.java:16)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Validate failed: Migrations have failed validation
-Detected failed migration to version 2 (criando tabelas do bd).
-Please remove any half-completed changes then run repair to fix the schema history.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V3__inserindo_usuarios.sql failed
+----------------------------------------
+SQL State  : 42S02
+Error Code : 1146
+Message    : Table 'products.tb_usuario_perfil' doesn't exist
+Location   : db/migration/V3__inserindo_usuarios.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V3__inserindo_usuarios.sql)
+Line       : 9
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
@@ -1019,14 +834,258 @@ Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
 	... 10 common frames omitted
-Caused by: org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation
-Detected failed migration to version 2 (criando tabelas do bd).
-Please remove any half-completed changes then run repair to fix the schema history.
-Need more flexibility with validation rules? Learn more: https://rd.gt/3AbJUZE
-	at org.flywaydb.core.Flyway.lambda$migrate$1(Flyway.java:201)
+Caused by: org.flywaydb.core.internal.exception.FlywayMigrateException: Script V3__inserindo_usuarios.sql failed
+----------------------------------------
+SQL State  : 42S02
+Error Code : 1146
+Message    : Table 'products.tb_usuario_perfil' doesn't exist
+Location   : db/migration/V3__inserindo_usuarios.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V3__inserindo_usuarios.sql)
+Line       : 9
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:399)
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:283)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:59)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:282)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:255)
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:153)
+	at org.flywaydb.database.mysql.MySQLNamedLockTemplate.execute(MySQLNamedLockTemplate.java:58)
+	at org.flywaydb.database.mysql.MySQLConnection.lock(MySQLConnection.java:150)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:164)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:153)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:104)
+	at org.flywaydb.core.Flyway.lambda$migrate$1(Flyway.java:247)
 	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:210)
 	at org.flywaydb.core.Flyway.migrate(Flyway.java:188)
 	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
 	... 17 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Script V3__inserindo_usuarios.sql failed
+----------------------------------------
+SQL State  : 42S02
+Error Code : 1146
+Message    : Table 'products.tb_usuario_perfil' doesn't exist
+Location   : db/migration/V3__inserindo_usuarios.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V3__inserindo_usuarios.sql)
+Line       : 9
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:256)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:217)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:137)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:75)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:66)
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:31)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:65)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:391)
+	... 33 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'products.tb_usuario_perfil' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:215)
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:88)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:212)
+	... 39 common frames omitted
+2026-06-02 11:30:26.475 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-06-02 11:30:26.542 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 42060 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
+2026-06-02 11:30:26.544 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
+2026-06-02 11:30:28.588 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-02 11:30:28.590 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-02 11:30:28.590 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-06-02 11:30:28.665 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-02 11:30:29.064 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 11:30:29.345 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b7ee56c
+2026-06-02 11:30:29.351 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-02 11:30:29.479 [main] INFO  >>> org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/products?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC (MySQL 5.5)
+2026-06-02 11:30:29.594 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `products`.`flyway_schema_history` does not exist yet
+2026-06-02 11:30:29.602 [main] INFO  >>> o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.070s)
+2026-06-02 11:30:29.711 [main] INFO  >>> org.flywaydb.core.Flyway - All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2026-06-02 11:30:29.724 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `products`.`flyway_schema_history` ...
+2026-06-02 11:30:29.827 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Current version of schema `products`: << Empty Schema >>
+2026-06-02 11:30:29.828 [main] WARN  >>> o.f.core.internal.command.DbMigrate - outOfOrder mode is active. Migration of schema `products` may not be reproducible.
+2026-06-02 11:30:29.847 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "1 - criacao do bd"
+2026-06-02 11:30:29.858 [main] WARN  >>> o.f.c.i.s.DefaultSqlScriptExecutor - DB: Can't create database 'products'; database exists (SQL State: HY000 - Error Code: 1007)
+2026-06-02 11:30:29.909 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "2 - criando tabelas do bd"
+2026-06-02 11:30:30.433 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "3 - inserindo usuarios"
+2026-06-02 11:30:30.504 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "4 - criando tabela recover pw"
+2026-06-02 11:30:30.519 [main] ERROR >>> o.f.core.internal.command.DbMigrate - Migration of schema `products` to version "4 - criando tabela recover pw" failed! Please restore backups and roll back database and code!
+2026-06-02 11:30:30.548 [main] WARN  >>> o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V4__criando_tabela_recover_pw.sql failed
+-----------------------------------------------
+SQL State  : HY000
+Error Code : 1273
+Message    : Unknown collation: 'utf8mb4_0900_ai_ci'
+Location   : db/migration/V4__criando_tabela_recover_pw.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V4__criando_tabela_recover_pw.sql)
+Line       : 1
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+2026-06-02 11:30:30.549 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-02 11:30:30.561 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-02 11:30:30.567 [main] INFO  >>> o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-06-02 11:30:30.611 [main] ERROR >>> o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V4__criando_tabela_recover_pw.sql failed
+-----------------------------------------------
+SQL State  : HY000
+Error Code : 1273
+Message    : Unknown collation: 'utf8mb4_0900_ai_ci'
+Location   : db/migration/V4__criando_tabela_recover_pw.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V4__criando_tabela_recover_pw.sql)
+Line       : 1
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at br.ifmg.produto1_2026.Produto12026Application.main(Produto12026Application.java:16)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Script V4__criando_tabela_recover_pw.sql failed
+-----------------------------------------------
+SQL State  : HY000
+Error Code : 1273
+Message    : Unknown collation: 'utf8mb4_0900_ai_ci'
+Location   : db/migration/V4__criando_tabela_recover_pw.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V4__criando_tabela_recover_pw.sql)
+Line       : 1
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	... 10 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywayMigrateException: Script V4__criando_tabela_recover_pw.sql failed
+-----------------------------------------------
+SQL State  : HY000
+Error Code : 1273
+Message    : Unknown collation: 'utf8mb4_0900_ai_ci'
+Location   : db/migration/V4__criando_tabela_recover_pw.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V4__criando_tabela_recover_pw.sql)
+Line       : 1
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:399)
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:283)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:59)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:282)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:255)
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:153)
+	at org.flywaydb.database.mysql.MySQLNamedLockTemplate.execute(MySQLNamedLockTemplate.java:58)
+	at org.flywaydb.database.mysql.MySQLConnection.lock(MySQLConnection.java:150)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:164)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:153)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:104)
+	at org.flywaydb.core.Flyway.lambda$migrate$1(Flyway.java:247)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:210)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:188)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	... 17 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Script V4__criando_tabela_recover_pw.sql failed
+-----------------------------------------------
+SQL State  : HY000
+Error Code : 1273
+Message    : Unknown collation: 'utf8mb4_0900_ai_ci'
+Location   : db/migration/V4__criando_tabela_recover_pw.sql (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes\db\migration\V4__criando_tabela_recover_pw.sql)
+Line       : 1
+Statement  : Run Flyway with -X option to see the actual statement causing the problem
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:256)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:217)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:137)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:75)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:66)
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:31)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:65)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:391)
+	... 33 common frames omitted
+Caused by: java.sql.SQLException: Unknown collation: 'utf8mb4_0900_ai_ci'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:215)
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:88)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:212)
+	... 39 common frames omitted
+2026-06-02 11:35:00.305 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-06-02 11:35:00.362 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 23928 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
+2026-06-02 11:35:00.364 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
+2026-06-02 11:35:02.456 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-06-02 11:35:02.463 [main] INFO  >>> o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-02 11:35:02.464 [main] INFO  >>> o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-06-02 11:35:02.687 [main] INFO  >>> o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-06-02 11:35:03.681 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 11:35:04.208 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69a73867
+2026-06-02 11:35:04.210 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-02 11:35:04.410 [main] INFO  >>> org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/products?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC (MySQL 5.5)
+2026-06-02 11:35:04.537 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `products`.`flyway_schema_history` does not exist yet
+2026-06-02 11:35:04.543 [main] INFO  >>> o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.068s)
+2026-06-02 11:35:04.657 [main] INFO  >>> org.flywaydb.core.Flyway - All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2026-06-02 11:35:04.677 [main] INFO  >>> o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `products`.`flyway_schema_history` ...
+2026-06-02 11:35:04.809 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Current version of schema `products`: << Empty Schema >>
+2026-06-02 11:35:04.809 [main] WARN  >>> o.f.core.internal.command.DbMigrate - outOfOrder mode is active. Migration of schema `products` may not be reproducible.
+2026-06-02 11:35:04.843 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "1 - criacao do bd"
+2026-06-02 11:35:04.857 [main] WARN  >>> o.f.c.i.s.DefaultSqlScriptExecutor - DB: Can't create database 'products'; database exists (SQL State: HY000 - Error Code: 1007)
+2026-06-02 11:35:04.976 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "2 - criando tabelas do bd"
+2026-06-02 11:35:05.549 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "3 - inserindo usuarios"
+2026-06-02 11:35:05.625 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Migrating schema `products` to version "4 - criando tabela recover pw"
+2026-06-02 11:35:05.699 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Successfully applied 4 migrations to schema `products`, now at version v4 (execution time 00:00.599s)
+2026-06-02 11:35:06.028 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-02 11:35:06.315 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-06-02 11:35:06.457 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-06-02 11:35:07.973 [main] WARN  >>> org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-02 11:35:08.032 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-02 11:35:11.595 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-02 11:35:15.982 [main] INFO  >>> o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-06-02 11:35:16.022 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 16.354 seconds (process running for 17.096)
+2026-06-02 11:35:16.141 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-06-02 11:35:16.141 [main] WARN  >>> o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-06-02 11:36:12.626 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-02 11:36:12.635 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-02 11:36:18.033 [background-preinit] INFO  >>> o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-06-02 11:36:18.088 [main] INFO  >>> b.i.p.Produto12026Application - Starting Produto12026Application using Java 25.0.2 with PID 15764 (C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026\target\classes started by Petricks in C:\Users\Petricks\Documents\graduacao\7periodo\back-end\produto1-2026)
+2026-06-02 11:36:18.089 [main] INFO  >>> b.i.p.Produto12026Application - The following 1 profile is active: "dev"
+2026-06-02 11:36:20.901 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-02 11:36:21.136 [main] INFO  >>> com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b9f7edc
+2026-06-02 11:36:21.139 [main] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-02 11:36:21.283 [main] INFO  >>> org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/products?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC (MySQL 5.5)
+2026-06-02 11:36:21.365 [main] INFO  >>> o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.052s)
+2026-06-02 11:36:21.387 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Current version of schema `products`: 4
+2026-06-02 11:36:21.387 [main] WARN  >>> o.f.core.internal.command.DbMigrate - outOfOrder mode is active. Migration of schema `products` may not be reproducible.
+2026-06-02 11:36:21.393 [main] INFO  >>> o.f.core.internal.command.DbMigrate - Schema `products` is up to date. No migration necessary.
+2026-06-02 11:36:21.503 [main] INFO  >>> o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-02 11:36:21.576 [main] INFO  >>> org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-06-02 11:36:21.645 [main] INFO  >>> o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-06-02 11:36:22.101 [main] WARN  >>> org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-02 11:36:22.125 [main] INFO  >>> o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-02 11:36:23.503 [main] INFO  >>> o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-02 11:36:32.056 [main] INFO  >>> b.i.p.Produto12026Application - Started Produto12026Application in 15.214 seconds (process running for 17.438)
+2026-06-02 11:36:32.128 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-02 11:36:32.151 [SpringApplicationShutdownHook] INFO  >>> com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
